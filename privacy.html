@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR ADVERTS LLC</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/xfinify.css">
+</head>
+<body>
+
+<!-- Navbar -->
+ <!-- Overlay -->
+<div id="popupOverlay" style="
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+">
+
+  <!-- Popup Box -->
+  <div style="
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    position: relative;
+    font-family: Arial, sans-serif;
+  ">
+
+    <!-- Close Button -->
+    <span onclick="closePopup()" style="
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+    ">✖️</span>
+
+    <h3 style="margin-bottom: 10px;">Talk to an Expert!</h3>
+    <p style="font-size: 14px; color: #555;">Call us now for quick support</p>
+
+    <!-- Call Button -->
+    <a href="tel:+18885504082" style="
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: linear-gradient(45deg, #4facfe, #00c6ff);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    ">
+      📞 Call Now
+    </a>
+
+  </div>
+</div>
+
+
+<!-- Navbar -->
+ 
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-2 shadow-sm sticky-top">
+    <div class="container align-items-center">
+        <a class="navbar-brand fw-bold" href="#"><img src="logo.jpeg" alt="" width="130px"></a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="cable.html">Cable</a></li>
+                <li class="nav-item"><a class="nav-link" href="internet.html">Internet</a></li>
+                <li class="nav-item dropdown">
+  <a
+    class="nav-link dropdown-toggle"
+    href="#"
+    id="servicesDropdown"
+    role="button"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  >
+    Services
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+    <li><a class="dropdown-item" href="verizon.html">Verizon</a></li>
+   <li><a class="dropdown-item" href="#">Frontier</a></li>
+    <li><a class="dropdown-item" href="spectrum.html">Spectrum</a></li>
+    <li><a class="dropdown-item" href="#">Kinetic</a></li>
+    <li><a class="dropdown-item" href="xfinity.html">Xfinity</a></li>
+  </ul>
+</li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            </ul>
+
+            <a href="tel:+18885504082"  class="btn call-btn">
+                <i class="fa fa-phone"></i> +1 (888) 550-4082
+            </a>
+        </div>
+    </div>
+</nav>
+
+
+<section class="satx-policy-hero">
+  <div class="container satx-container">
+
+    <div class="row justify-content-center text-center">
+      <div class="col-12 col-lg-10">
+
+        <div class="satx-hero-content satx-anim-up satx-visible" style="transition-delay: 0s;">
+
+          <div class="satx-badge mx-auto">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            Legal &amp; Compliance
+          </div>
+
+          <h1>
+            Privacy <span>Policy</span>
+          </h1>
+
+          <p>
+            How AR ADVERTS LLC collects, uses, and protects your personal information while providing high-speed connectivity services.
+          </p>
+
+          <div class="satx-updated-tag mx-auto">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            Last Updated: March 2026
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="satx-privacy">
+  <div class="container satx-container">
+
+    <div class="row g-4">
+
+      <!-- 1. Introduction -->
+      <div class="col-12">
+        <div class="satx-glass-card satx-anim-up satx-visible" style="transition-delay: 0s;">
+          <h2 class="satx-sec-h">
+            <span class="satx-sec-ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+            </span>
+            1. Introduction
+          </h2>
+
+          <p class="satx-p">
+            Welcome to <span class="satx-strong">AR ADVERTS LLC</span> ("we," "our," or "us"). We are an authorized sales partner for leading internet and cable service providers, including Frontier, Spectrum, Optimum, Kinetic Windstream, Xfinity, and Brightspeed. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you visit our website or interact with our services.
+          </p>
+
+          <p class="satx-p">
+            By accessing or using our website, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy. If you do not agree with the terms of this policy, please do not access the site.
+          </p>
+        </div>
+      </div>
+
+      <!-- 2. Information We Collect -->
+      <div class="col-12">
+        <div class="satx-glass-card satx-anim-up satx-visible" style="transition-delay: 0.1s;">
+          <h2 class="satx-sec-h">
+            <span class="satx-sec-ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+            </span>
+            2. Information We Collect
+          </h2>
+
+          <p class="satx-p">
+            We may collect personal information that you voluntarily provide to us when you contact us by phone, email, or through our website. This includes:
+          </p>
+
+          <div class="satx-list">
+            <div class="satx-li">
+              <div class="satx-li-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+              <div><span class="satx-strong">Personal Identifiers:</span> Full name, email address, phone number, and residential address.</div>
+            </div>
+
+            <div class="satx-li">
+              <div class="satx-li-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+              <div><span class="satx-strong">Service Inquiry Details:</span> Information about the internet or cable plans you are interested in, your current provider, and service preferences.</div>
+            </div>
+
+            <div class="satx-li">
+              <div class="satx-li-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+              <div><span class="satx-strong">Device &amp; Usage Data:</span> IP address, browser type, operating system, referring URLs, pages viewed, and time spent on our site.</div>
+            </div>
+
+            <div class="satx-li">
+              <div class="satx-li-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+              <div><span class="satx-strong">Call Records:</span> If you call our toll-free number, we may record calls for quality assurance and training purposes, with prior notification.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. How We Use -->
+      <div class="col-12">
+        <div class="satx-glass-card satx-anim-up satx-visible" style="transition-delay: 0.2s;">
+          <h2 class="satx-sec-h">
+            <span class="satx-sec-ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </span>
+            3. How We Use Your Information
+          </h2>
+
+          <p class="satx-p">
+            We use the information we collect for the following purposes:
+          </p>
+
+          <div class="satx-list">
+            <div class="satx-li">
+              <div class="satx-li-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+              <div>To assist you in comparing and enrolling in internet and cable service plans from our authorized provider partners.</div>
+            </div>
+
+            <div class="satx-li">
+              <div class="satx-li-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+              <div>To verify service availability at your address and facilitate the enrollment process.</div>
+            </div>
+
+            <div class="satx-li">
+              <div class="satx-li-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+              <div>To communicate with you regarding your inquiries, send service confirmations, and provide customer support.</div>
+            </div>
+
+            <div class="satx-li">
+              <div class="satx-li-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+              <div>To improve and optimize our website, services, and overall user experience through analytics.</div>
+            </div>
+
+            <div class="satx-li">
+              <div class="satx-li-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+              <div>To comply with applicable laws, regulations, and legal obligations.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Information Sharing -->
+      <div class="col-12">
+        <div class="satx-glass-card satx-anim-up satx-visible" style="transition-delay: 0.3s;">
+          <h2 class="satx-sec-h">
+            <span class="satx-sec-ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 00-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 010 7.75"></path>
+              </svg>
+            </span>
+            4. Information Sharing &amp; Disclosure
+          </h2>
+
+          <p class="satx-p">
+            We do <span class="satx-strong">not</span> sell, rent, or trade your personal information to third parties for their independent marketing purposes. We may share your information only in the following circumstances:
+          </p>
+
+          <div class="satx-list">
+            <div class="satx-li">
+              <div class="satx-li-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+              <div><span class="satx-strong">Service Providers:</span> We share your information with the internet and cable providers solely to facilitate your service enrollment and installation.</div>
+            </div>
+
+            <div class="satx-li">
+              <div class="satx-li-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+              <div><span class="satx-strong">Business Partners:</span> Trusted third-party vendors who perform services on our behalf, such as website hosting, analytics, and customer support.</div>
+            </div>
+
+            <div class="satx-li">
+              <div class="satx-li-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+              <div><span class="satx-strong">Legal Compliance:</span> When required by law, subpoena, court order, or government regulation.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Cookies -->
+      <div class="col-12">
+        <div class="satx-glass-card satx-anim-up satx-visible" style="transition-delay: 0.4s;">
+          <h2 class="satx-sec-h">
+            <span class="satx-sec-ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 8v4l3 3"></path>
+              </svg>
+            </span>
+            5. Cookies &amp; Tracking Technologies
+          </h2>
+
+          <p class="satx-p">
+            Our website may use cookies, web beacons, and similar tracking technologies to enhance your browsing experience, analyze site traffic, and understand user behavior.
+          </p>
+
+          <div class="satx-list">
+            <div class="satx-li">
+              <div class="satx-li-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+              <div><span class="satx-strong">Essential Cookies:</span> Required for the website to function properly.</div>
+            </div>
+
+            <div class="satx-li">
+              <div class="satx-li-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+              <div><span class="satx-strong">Analytics Cookies:</span> Used to understand how visitors interact with our website.</div>
+            </div>
+
+            <div class="satx-li">
+              <div class="satx-li-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+              <div><span class="satx-strong">Marketing Cookies:</span> Used to measure campaign effectiveness.</div>
+            </div>
+          </div>
+
+          <p class="satx-p">
+            You may disable cookies through your browser settings at any time. However, some features of the website may not function properly without cookies enabled.
+          </p>
+        </div>
+      </div>
+
+      <!-- 6 and 7 -->
+      <div class="col-12">
+        <div class="satx-glass-card satx-anim-up satx-visible" style="transition-delay: 0.5s;">
+          <h2 class="satx-sec-h">
+            <span class="satx-sec-ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </span>
+            6. Data Security
+          </h2>
+
+          <p class="satx-p">
+            We implement industry-standard administrative, technical, and physical security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. These measures include SSL encryption, secure data storage, access controls, and regular security audits.
+          </p>
+
+          <h2 class="satx-sec-h satx-sub-sec">
+            <span class="satx-sec-ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                <circle cx="8.5" cy="7" r="4"></circle>
+                <line x1="20" y1="8" x2="20" y2="14"></line>
+                <line x1="23" y1="11" x2="17" y2="11"></line>
+              </svg>
+            </span>
+            7. Your Rights &amp; Choices
+          </h2>
+
+          <p class="satx-p">
+            Depending on your jurisdiction, you may have the following rights regarding your personal data:
+          </p>
+
+          <div class="satx-list">
+            <div class="satx-li">
+              <div class="satx-li-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+              <div><span class="satx-strong">Right to Access:</span> Request a copy of the personal information we hold about you.</div>
+            </div>
+
+            <div class="satx-li">
+              <div class="satx-li-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+              <div><span class="satx-strong">Right to Correction:</span> Request corrections to any inaccurate or incomplete personal information.</div>
+            </div>
+
+            <div class="satx-li">
+              <div class="satx-li-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+              <div><span class="satx-strong">Right to Deletion:</span> Request that we delete your personal information, subject to legal obligations.</div>
+            </div>
+
+            <div class="satx-li">
+              <div class="satx-li-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+              <div><span class="satx-strong">Right to Opt-Out:</span> Opt out of marketing communications at any time by contacting us.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8, 9, 10 -->
+      <div class="col-12">
+        <div class="satx-glass-card satx-anim-up satx-visible" style="transition-delay: 0.6s;">
+          <h2 class="satx-sec-h">
+            <span class="satx-sec-ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </span>
+            8. Third-Party Links
+          </h2>
+
+          <p class="satx-p">
+            Our website may contain links to third-party websites, including those of our authorized provider partners. We are not responsible for the privacy practices, content, or security of these external sites.
+          </p>
+
+          <h2 class="satx-sec-h satx-sub-sec">
+            <span class="satx-sec-ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+              </svg>
+            </span>
+            9. Children's Privacy
+          </h2>
+
+          <p class="satx-p">
+            Our services are not directed to individuals under the age of 18. We do not knowingly collect personal information from children.
+          </p>
+
+          <h2 class="satx-sec-h satx-sub-sec">
+            <span class="satx-sec-ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"></path>
+                <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+              </svg>
+            </span>
+            10. Changes to This Policy
+          </h2>
+
+          <p class="satx-p">
+            We reserve the right to update or modify this Privacy Policy at any time. Any changes will be posted on this page with an updated "Last Updated" date.
+          </p>
+        </div>
+      </div>
+
+      <!-- 11. Contact Us -->
+      <div class="col-12">
+        <div class="satx-glass-card satx-anim-up satx-visible" style="transition-delay: 0.7s;">
+          <h2 class="satx-sec-h">
+            <span class="satx-sec-ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22 6 12 13 2 6"></polyline>
+              </svg>
+            </span>
+            11. Contact Us
+          </h2>
+
+          <p class="satx-p">
+            If you have any questions, concerns, or requests regarding this Privacy Policy or how we handle your personal data, please contact AR ADVERTS LLC:
+          </p>
+
+          <div class="row g-4 satx-contact-grid">
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="satx-c-card">
+                <div class="satx-c-ic">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07A19.5 19.5 0 013.25 10.5 19.8 19.8 0 01.22 1.9 2 2 0 012.18 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.61 7.91a16 16 0 006.06 6.06l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"></path>
+                  </svg>
+                </div>
+
+                <div class="satx-c-info">
+                  <div class="satx-c-label">Phone Support</div>
+                  <div class="satx-c-val"><a href="tel:18663147409">+1 (888) 550-4082</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="satx-c-card">
+                <div class="satx-c-ic">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22 6 12 13 2 6"></polyline>
+                  </svg>
+                </div>
+
+                <div class="satx-c-info">
+                  <div class="satx-c-label">Email Us</div>
+                  <div class="satx-c-val"><a href="mailto:info@gettvinternet.online">info@gettvinternet.online</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="satx-c-card">
+                <div class="satx-c-ic">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+
+                <div class="satx-c-info">
+                  <div class="satx-c-label">Official Website</div>
+                  <div class="satx-c-val"><a href="https://gettvinternet.online" target="_blank" rel="noopener">gettvinternet.online</a></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- Bootstrap JS -->
+<footer class="saa-ft bg-light pt-5">
+  <div class="container">
+    <div class="row justify-content-between">
+
+      <!-- Left Column: Brand & Contact -->
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="d-flex align-items-center mb-3">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" width="28" height="28" stroke-linecap="round" stroke-linejoin="round" class="me-2">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+          </svg>
+          <span class="fs-5 fw-bold text-dark">AR ADVERTS LLC <span class="fs-5 fw-bold">INC</span></span>
+        </div>
+        <p class="text-muted">We are an authorized third-party connection expert, helping you compare and enroll in the best internet, TV, and mobile plans nationwide.</p>
+        
+        <!-- Email -->
+        <div class="d-flex align-items-center mt-3 mb-2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" width="20" height="20" class="me-2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <a href="mailto:info@gettvinternet.online" class="text-dark fw-semibold text-decoration-none">info@gettvinternet.online</a>
+        </div>
+
+        <!-- Phone CTA -->
+        <a href="tel:+18885504082" class="saa-srv-cta">
+            <i class="fa fa-phone"></i> +1 (888) 550-4082
+          </a>
+      </div>
+
+      <!-- Middle Column: Quick Links -->
+      <div class="col-md-3 mb-4 mb-md-0">
+        <h6 class="fw-bold mb-3 text-primary">Quick Links</h6>
+        <ul class="list-unstyled text-muted">
+          <li class="mb-3"><a href="/" class="text-decoration-none text-muted">Home</a></li>
+          <li class="mb-3"><a href="about.html" class="text-decoration-none text-muted">About Us</a></li>
+          <li class="mb-3"><a href="contact.html" class="text-decoration-none text-muted">Contact Us</a></li>
+          <li class="mb-3"><a href="privacy.html" class="text-decoration-none text-muted">Privacy Policy</a></li>
+          <li><a href="terms.html" class="text-decoration-none text-muted">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Right Column: Our Partners -->
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3 text-primary">Our Partners</h6>
+        <ul class="list-unstyled text-muted">
+          <li class="mb-3"><a href="spectrum.html" class="text-decoration-none text-muted">Spectrum</a></li>
+          <li class="mb-3"><a href="xfinity.html" class="text-decoration-none text-muted">Xfinity</a></li>
+          <li class="mb-3"><a href="#" class="text-decoration-none text-muted">Frontier</a></li>
+          <li class="mb-3"><a href="#" class="text-decoration-none text-muted">verizon</a></li>
+          <li class="mb-3"><a href="#" class="text-decoration-none text-muted">Kinetic</a></li>
+         
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bottom Dark Bar -->
+  <div class="bg-dark text-light py-3 mt-5">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div>© 2026 AR ADVERTS LLC. All Rights Reserved.</div>
+      
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

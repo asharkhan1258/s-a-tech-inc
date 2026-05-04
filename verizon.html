@@ -19,6 +19,64 @@
 <body>
 
 <!-- Navbar -->
+ <!-- Overlay -->
+<div id="popupOverlay" style="
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+">
+
+  <!-- Popup Box -->
+  <div style="
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    position: relative;
+    font-family: Arial, sans-serif;
+  ">
+
+    <!-- Close Button -->
+    <span onclick="closePopup()" style="
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+    ">✖️</span>
+
+    <h3 style="margin-bottom: 10px;">Talk to an Expert!</h3>
+    <p style="font-size: 14px; color: #555;">Call us now for quick support</p>
+
+    <!-- Call Button -->
+    <a href="tel:+18885504082" style="
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: linear-gradient(45deg, #4facfe, #00c6ff);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    ">
+      📞 Call Now
+    </a>
+
+  </div>
+</div>
+
+<!-- Navbar -->
+ 
 <nav class="navbar navbar-expand-lg navbar-light bg-white py-2 shadow-sm sticky-top">
     <div class="container align-items-center">
         <a class="navbar-brand fw-bold" href="#"><img src="https://gettvinternet.online/wp-content/uploads/2026/03/SA-Tech-INC.png" alt="" width="100px"></a>
@@ -56,8 +114,8 @@
                 <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
             </ul>
 
-            <a href="tel:18663147409"  class="btn call-btn">
-                <i class="fa fa-phone"></i> 1 (866) 314-7409
+            <a href="tel:+18885504082"  class="btn call-btn">
+                <i class="fa fa-phone"></i> +1 (888) 550-4082
             </a>
         </div>
     </div>
@@ -160,12 +218,12 @@
 
           <div class="d-none d-lg-block">
             <a
-              href="tel:424-277-3379"
-              placeholder="424-277-3379"
+              href="tel:+18885504082"
+              placeholder="+18885504082"
               ringpoolid="31728"
               class="button button--black hero__call af-tel"
             >
-              Call 424-277-3379
+              Call +18885504082
             </a>
           </div>
 
@@ -205,12 +263,12 @@
       <div class="col-9 col-sm-8 col-md-4 col-lg-3">
 
         <a
-          href="tel:424-277-3379"
-          placeholder="424-277-3379"
+          href="tel:+18885504082"
+          placeholder="+18885504082"
           ringpoolid="31728"
           class="button button--white af-tel"
         >
-          Call 424-277-3379
+          Call +18885504082
         </a>
 
       </div>
@@ -290,8 +348,8 @@
                 Fios plan prices include taxes &amp; fees.
               </p>
 
-              <a href="tel:424-277-3379" placeholder="424-277-3379" ringpoolid="31728" class="button button--black plan__call af-tel">
-                Call to order 424-277-3379
+              <a href="tel:+18885504082" placeholder="+18885504082" ringpoolid="31728" class="button button--black plan__call af-tel">
+                Call to order +18885504082
               </a>
 
               <a href="#" target="_blank" rel="noopener noreferrer" class="plan__availability" aria-label="Opens in New Window - 500 Mbps Availability">
@@ -371,8 +429,8 @@
                 Fios plan prices include taxes &amp; fees.
               </p>
 
-              <a href="tel:424-277-3379" placeholder="424-277-3379" ringpoolid="31728" class="button button--black plan__call af-tel">
-                Call to order 424-277-3379
+              <a href="tel:+18885504082" placeholder="+18885504082" ringpoolid="31728" class="button button--black plan__call af-tel">
+                Call to order +18885504082
               </a>
 
               <a href="#" target="_blank" rel="noopener noreferrer" class="plan__availability" aria-label="Opens in New Window - 1 Gig Availability">
@@ -470,8 +528,8 @@
                 Fios plan prices include taxes &amp; fees.
               </p>
 
-              <a href="tel:424-277-3379" placeholder="424-277-3379" ringpoolid="31728" class="button button--black plan__call af-tel">
-                Call to order 424-277-3379
+              <a href="tel:+18885504082" placeholder="+18885504082" ringpoolid="31728" class="button button--black plan__call af-tel">
+                Call to order +18885504082
               </a>
 
               <a href="#" target="_blank" rel="noopener noreferrer" class="plan__availability" aria-label="Opens in New Window - 300 Mbps Availability">
@@ -558,8 +616,8 @@
                 Plan prices include taxes and fees.
               </p>
 
-              <a href="tel:424-277-3379" placeholder="424-277-3379" ringpoolid="31728" class="button button--black plan__call af-tel">
-                Call to order 424-277-3379
+              <a href="tel:+18885504082" placeholder="+18885504082" ringpoolid="31728" class="button button--black plan__call af-tel">
+                Call to order +18885504082
               </a>
 
               <a href="#" target="_blank" rel="noopener noreferrer" class="plan__availability" aria-label="Opens in New Window - 5G Home Plus Availability">
@@ -636,8 +694,8 @@
                 Plan prices include taxes and fees.
               </p>
 
-              <a href="tel:424-277-3379" placeholder="424-277-3379" ringpoolid="31728" class="button button--black plan__call af-tel">
-                Call to order 424-277-3379
+              <a href="tel:+18885504082" placeholder="+18885504082" ringpoolid="31728" class="button button--black plan__call af-tel">
+                Call to order +18885504082
               </a>
 
               <a href="#" target="_blank" rel="noopener noreferrer" class="plan__availability" aria-label="Opens in New Window - 5G Home Ultimate Availability">
@@ -737,8 +795,8 @@
                 Plan prices include taxes and fees.
               </p>
 
-              <a href="tel:424-277-3379" placeholder="424-277-3379" ringpoolid="31728" class="button button--black plan__call af-tel">
-                Call to order 424-277-3379
+              <a href="tel:+18885504082" placeholder="+18885504082" ringpoolid="31728" class="button button--black plan__call af-tel">
+                Call to order +18885504082
               </a>
 
               <a href="#" target="_blank" rel="noopener noreferrer" class="plan__availability" aria-label="Opens in New Window - 5G Home Availability">
@@ -1025,12 +1083,12 @@
       <div class="col-11 col-sm-9 col-md-5 col-lg-3 d-flex justify-content-center">
 
         <a
-          href="tel:424-277-3379"
-          placeholder="424-277-3379"
+          href="tel:+18885504082"
+          placeholder="+18885504082"
           ringpoolid="31728"
           class="button button--black button--noborder switching__cta af-tel"
         >
-          Call to switch 424-277-3379
+          Call to switch +18885504082
         </a>
 
       </div>
@@ -1060,12 +1118,12 @@
       <div class="col-9 col-sm-7 col-md-4 offset-md-7 col-lg-3 offset-lg-5">
 
         <a
-          href="tel:424-277-3379"
-          placeholder="424-277-3379"
+          href="tel:+18885504082"
+          placeholder="+18885504082"
           ringpoolid="31728"
           class="button button--black button--noborder already__cta af-tel"
         >
-          Call 424-277-3379
+          Call +18885504082
         </a>
 
       </div>
@@ -1245,8 +1303,8 @@
         </div>
 
         <!-- Phone CTA -->
-        <a href="tel:18663147409" class="saa-srv-cta">
-            <i class="fa fa-phone"></i> 1 (866) 314-7409
+        <a href="tel:+18885504082" class="saa-srv-cta">
+            <i class="fa fa-phone"></i> +1 (888) 550-4082
           </a>
       </div>
 

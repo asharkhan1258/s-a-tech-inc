@@ -1,0 +1,1271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.satv-feats {
+  width: 100%;
+  padding: 90px 0;
+  background: linear-gradient(135deg, #06111f 0%, #0b1f35 45%, #111827 100%);
+  overflow: hidden;
+}
+
+
+
+.satv-sh {
+  margin-bottom: 50px;
+}
+
+.satv-badge {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 50px;
+  background: rgba(0, 191, 255, 0.12);
+  color: #38bdf8;
+  font-size: 15px;
+  font-weight: 700;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  margin-bottom: 18px;
+}
+
+.satv-badge svg {
+  width: 20px;
+  height: 20px;
+}
+
+.satv-sec-h {
+  font-size: 46px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.satv-sec-h span {
+  color: #38bdf8;
+}
+
+.satv-bento {
+  align-items: stretch;
+}
+
+.satv-bento-card {
+  height: 100%;
+  position: relative;
+  padding: 34px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+.satv-bento-card::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: rgba(56, 189, 248, 0.18);
+  filter: blur(10px);
+}
+
+.satv-bento-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(56, 189, 248, 0.65);
+  box-shadow: 0 25px 60px rgba(56, 189, 248, 0.18);
+}
+
+.satv-b1 {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.18), rgba(255, 255, 255, 0.07));
+}
+
+.satv-b2 {
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.18), rgba(255, 255, 255, 0.07));
+}
+
+.satv-b3 {
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.18), rgba(255, 255, 255, 0.07));
+}
+
+.satv-b4 {
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.18), rgba(255, 255, 255, 0.07));
+}
+
+.satv-b-ic {
+  width: 62px;
+  height: 62px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  margin-bottom: 22px;
+  box-shadow: 0 12px 25px rgba(37, 99, 235, 0.35);
+}
+
+.satv-b-ic svg {
+  width: 32px;
+  height: 32px;
+}
+
+.satv-b-t {
+  font-size: 25px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+.satv-b-d {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #cbd5e1;
+  margin-bottom: 24px;
+}
+
+.satv-b-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 15px;
+  border-radius: 50px;
+  background: rgba(34, 197, 94, 0.14);
+  color: #86efac;
+  font-size: 14px;
+  font-weight: 700;
+  border: 1px solid rgba(134, 239, 172, 0.35);
+}
+
+.satv-b-pill svg {
+  width: 17px;
+  height: 17px;
+}
+
+.satv-a {
+  animation-name: satvFadeUp;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+}
+
+.satv-v {
+  opacity: 0;
+}
+
+@keyframes satvFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.satv-cable-pricing {
+  width: 100%;
+  padding: 90px 0;
+  background: linear-gradient(135deg, #07111f 0%, #0f2238 45%, #0a1323 100%);
+  overflow: hidden;
+}
+
+.satv-p-note {
+  max-width: 780px;
+  margin: -25px auto 45px auto;
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #cbd5e1;
+}
+
+.satv-p-grid {
+  align-items: stretch;
+}
+
+.satv-p-card {
+  position: relative;
+  height: 100%;
+  min-height: 520px;
+  padding: 36px 30px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(15px);
+  transition: all 0.35s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.satv-p-card::before {
+  content: "";
+  position: absolute;
+  top: -90px;
+  right: -90px;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background: rgba(56, 189, 248, 0.18);
+  filter: blur(12px);
+}
+
+.satv-p-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(56, 189, 248, 0.65);
+  box-shadow: 0 28px 65px rgba(56, 189, 248, 0.18);
+}
+
+.satv-pop {
+  border-color: rgba(251, 191, 36, 0.65);
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.18), rgba(255, 255, 255, 0.08));
+  transform: scale(1.03);
+}
+
+.satv-pop:hover {
+  transform: scale(1.03) translateY(-10px);
+  box-shadow: 0 30px 70px rgba(251, 191, 36, 0.18);
+}
+
+.satv-pop-tag {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  padding: 8px 14px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  color: #111827;
+  font-size: 13px;
+  font-weight: 800;
+  z-index: 2;
+}
+
+.satv-p-type {
+  width: fit-content;
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 50px;
+  background: rgba(56, 189, 248, 0.14);
+  color: #38bdf8;
+  font-size: 14px;
+  font-weight: 800;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.satv-p-name {
+  font-size: 26px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 18px;
+  position: relative;
+  z-index: 2;
+}
+
+.satv-p-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.satv-p-price {
+  font-size: 58px;
+  line-height: 1;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.satv-p-price small {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.satv-p-per {
+  font-size: 18px;
+  font-weight: 700;
+  color: #94a3b8;
+  margin-bottom: 8px;
+}
+
+.satv-p-promo {
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 14px;
+  border-radius: 50px;
+  background: rgba(34, 197, 94, 0.14);
+  color: #86efac;
+  font-size: 14px;
+  font-weight: 800;
+  border: 1px solid rgba(134, 239, 172, 0.35);
+  position: relative;
+  z-index: 2;
+}
+
+.satv-p-promo svg {
+  width: 16px;
+  height: 16px;
+}
+
+.satv-p-div {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 28px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.satv-p-feats {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.satv-p-feat {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #dbeafe;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.satv-chk {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(34, 197, 94, 0.18);
+  color: #86efac;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.satv-chk svg {
+  width: 14px;
+  height: 14px;
+}
+
+.satv-p-bottom {
+  margin-top: auto;
+  padding-top: 28px;
+  position: relative;
+  z-index: 2;
+}
+
+.satv-btn {
+  width: 100%;
+  min-height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 800;
+  box-shadow: 0 15px 30px rgba(37, 99, 235, 0.35);
+  transition: all 0.3s ease;
+}
+
+.satv-btn:hover {
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.45);
+}
+
+.satv-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+
+.satv-directv-white {
+  width: 100%;
+  padding: 90px 0;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.satv-directv-white .satv-ctr {
+  max-width: 1320px;
+}
+
+.satv-directv-white .satv-sh {
+  margin-bottom: 25px;
+}
+
+.satv-directv-white .satv-badge {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 50px;
+  background: #eef6ff;
+  color: #0b63ce;
+  font-size: 15px;
+  font-weight: 800;
+  border: 1px solid #cfe3ff;
+  margin-bottom: 18px;
+}
+
+.satv-directv-white .satv-badge svg {
+  width: 20px;
+  height: 20px;
+}
+
+.satv-directv-white .satv-sec-h {
+  font-size: 46px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #102033;
+}
+
+.satv-directv-white .satv-sec-h span {
+  color: #0b63ce;
+}
+
+.satv-directv-white .satv-p-note {
+  max-width: 850px;
+  margin: 0 auto 45px auto;
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #5b6676;
+}
+
+.satv-directv-white .satv-dtv-grid {
+  align-items: stretch;
+}
+
+.satv-directv-white .satv-p-card {
+  position: relative;
+  height: 100%;
+  min-height: 650px;
+  padding: 32px 24px;
+  border-radius: 26px;
+  background: #ffffff;
+  border: 1px solid #e3eaf3;
+  box-shadow: 0 18px 45px rgba(15, 35, 70, 0.10);
+  transition: all 0.35s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.satv-directv-white .satv-p-card::before {
+  content: "";
+  position: absolute;
+  top: -90px;
+  right: -90px;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background: rgba(11, 99, 206, 0.10);
+  filter: blur(10px);
+}
+
+.satv-directv-white .satv-p-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(11, 99, 206, 0.45);
+  box-shadow: 0 24px 60px rgba(11, 99, 206, 0.16);
+}
+
+.satv-directv-white .satv-pop {
+  border: 2px solid #0b63ce;
+  background: linear-gradient(180deg, #f4f9ff 0%, #ffffff 100%);
+  box-shadow: 0 22px 60px rgba(11, 99, 206, 0.18);
+}
+
+.satv-directv-white .satv-pop-tag {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 8px 14px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #0b63ce, #14a3ff);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 900;
+  z-index: 2;
+}
+
+.satv-directv-white .satv-p-type {
+  width: fit-content;
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 50px;
+  background: #eef6ff;
+  color: #0b63ce;
+  font-size: 14px;
+  font-weight: 900;
+  border: 1px solid #cfe3ff;
+  margin-bottom: 18px;
+  position: relative;
+  z-index: 2;
+}
+
+.satv-directv-white .satv-p-name {
+  font-size: 23px;
+  font-weight: 900;
+  color: #102033;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 2;
+}
+
+.satv-directv-white .satv-p-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 2;
+}
+
+.satv-directv-white .satv-p-price {
+  font-size: 50px;
+  line-height: 1;
+  font-weight: 900;
+  color: #0b63ce;
+}
+
+.satv-directv-white .satv-p-price small {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.satv-directv-white .satv-p-per {
+  font-size: 16px;
+  font-weight: 800;
+  color: #6b7280;
+  margin-bottom: 7px;
+}
+
+.satv-directv-white .satv-p-note-sm {
+  min-height: 76px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #667085;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.satv-directv-white .satv-p-promo {
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 13px;
+  border-radius: 50px;
+  background: #ecfdf3;
+  color: #07843f;
+  font-size: 13px;
+  font-weight: 900;
+  border: 1px solid #b8ebcc;
+  position: relative;
+  z-index: 2;
+}
+
+.satv-directv-white .satv-p-promo svg {
+  width: 15px;
+  height: 15px;
+}
+
+.satv-directv-white .satv-p-div {
+  width: 100%;
+  height: 1px;
+  background: #e6edf5;
+  margin: 24px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.satv-directv-white .satv-p-feats {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.satv-directv-white .satv-p-feat {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  color: #344054;
+  font-size: 14.5px;
+  font-weight: 600;
+  line-height: 1.55;
+  margin-bottom: 15px;
+}
+
+.satv-directv-white .satv-p-feat strong {
+  color: #102033;
+  font-weight: 900;
+}
+
+.satv-directv-white .satv-chk {
+  min-width: 23px;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: #ecfdf3;
+  color: #07843f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+.satv-directv-white .satv-chk svg {
+  width: 13px;
+  height: 13px;
+}
+
+.satv-directv-white .satv-p-bottom {
+  margin-top: auto;
+  padding-top: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+.satv-directv-white .satv-btn {
+  width: 100%;
+  min-height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #0b63ce, #14a3ff);
+  color: #ffffff;
+  font-size: 15.5px;
+  font-weight: 900;
+  box-shadow: 0 14px 30px rgba(11, 99, 206, 0.28);
+  transition: all 0.3s ease;
+}
+
+.satv-directv-white .satv-btn:hover {
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 18px 38px rgba(11, 99, 206, 0.36);
+}
+
+.satv-directv-white .satv-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.satv-directv-white .satv-a {
+  animation-name: satvDirectvFadeUp;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+}
+
+.satv-directv-white .satv-v {
+  opacity: 0;
+}
+
+@keyframes satvDirectvFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.satv-setup-white {
+  width: 100%;
+  padding: 90px 0;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+
+
+.satv-setup-white .satv-sh {
+  margin-bottom: 55px;
+}
+
+.satv-setup-white .satv-badge {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 50px;
+  background: #eef6ff;
+  color: #0b63ce;
+  font-size: 15px;
+  font-weight: 800;
+  border: 1px solid #cfe3ff;
+  margin-bottom: 18px;
+}
+
+.satv-setup-white .satv-badge svg {
+  width: 20px;
+  height: 20px;
+}
+
+.satv-setup-white .satv-sec-h {
+  font-size: 46px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #102033;
+}
+
+.satv-setup-white .satv-sec-h span {
+  color: #0b63ce;
+}
+
+.satv-setup-white .satv-timeline {
+  row-gap: 35px;
+}
+
+.satv-setup-white .satv-tl-card {
+  position: relative;
+  height: 100%;
+  min-height: 315px;
+  padding: 36px 28px;
+  text-align: center;
+  border-radius: 28px;
+  background: #ffffff;
+  border: 1px solid #e3eaf3;
+  box-shadow: 0 18px 45px rgba(15, 35, 70, 0.10);
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+.satv-setup-white .satv-tl-card::before {
+  content: "";
+  position: absolute;
+  top: -85px;
+  right: -85px;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  background: rgba(11, 99, 206, 0.10);
+  filter: blur(10px);
+}
+
+.satv-setup-white .satv-tl-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(11, 99, 206, 0.45);
+  box-shadow: 0 24px 60px rgba(11, 99, 206, 0.16);
+}
+
+.satv-setup-white .satv-tl-num {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0b63ce, #14a3ff);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: 0 10px 22px rgba(11, 99, 206, 0.25);
+}
+
+.satv-setup-white .satv-tl-ic {
+  width: 72px;
+  height: 72px;
+  border-radius: 22px;
+  margin: 12px auto 24px auto;
+  background: #eef6ff;
+  color: #0b63ce;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #cfe3ff;
+  position: relative;
+  z-index: 2;
+}
+
+.satv-setup-white .satv-tl-ic svg {
+  width: 34px;
+  height: 34px;
+}
+
+.satv-setup-white .satv-tl-t {
+  font-size: 23px;
+  font-weight: 900;
+  color: #102033;
+  margin-bottom: 14px;
+  position: relative;
+  z-index: 2;
+}
+
+.satv-setup-white .satv-tl-d {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #5b6676;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.satv-setup-white .satv-tl-arrow {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #eef6ff;
+  color: #0b63ce;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #cfe3ff;
+  box-shadow: 0 12px 25px rgba(15, 35, 70, 0.08);
+}
+
+.satv-setup-white .satv-tl-arrow svg {
+  width: 28px;
+  height: 28px;
+}
+
+.satv-setup-white .satv-a {
+  animation-name: satvSetupFadeUp;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+}
+
+.satv-setup-white .satv-v {
+  opacity: 0;
+}
+
+@keyframes satvSetupFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.satv-bundle-dark {
+  width: 100%;
+  padding: 90px 0;
+  background: #050b14;
+  overflow: hidden;
+}
+
+
+
+.satv-bundle-dark .satv-bundle-card {
+  position: relative;
+  width: 100%;
+  padding: 48px;
+  border-radius: 34px;
+  background: linear-gradient(135deg, #08111f 0%, #0b1f35 55%, #111827 100%);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.40);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  overflow: hidden;
+}
+
+.satv-bundle-dark .satv-bundle-card::before {
+  content: "";
+  position: absolute;
+  top: -120px;
+  right: -120px;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: rgba(56, 189, 248, 0.20);
+  filter: blur(18px);
+}
+
+.satv-bundle-dark .satv-bundle-card::after {
+  content: "";
+  position: absolute;
+  bottom: -120px;
+  left: -120px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: rgba(34, 197, 94, 0.14);
+  filter: blur(18px);
+}
+
+.satv-bundle-dark .satv-bundle-left {
+  position: relative;
+  z-index: 2;
+  max-width: 720px;
+}
+
+.satv-bundle-dark .satv-bundle-h {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+
+.satv-bundle-dark .satv-bundle-h span {
+  color: #38bdf8;
+}
+
+.satv-bundle-dark .satv-bundle-p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #cbd5e1;
+  margin-bottom: 28px;
+}
+
+.satv-bundle-dark .satv-bundle-pills {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.satv-bundle-dark .satv-bundle-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 50px;
+  background: rgba(34, 197, 94, 0.14);
+  color: #86efac;
+  font-size: 14px;
+  font-weight: 800;
+  border: 1px solid rgba(134, 239, 172, 0.35);
+}
+
+.satv-bundle-dark .satv-bundle-pill svg {
+  width: 17px;
+  height: 17px;
+}
+
+.satv-bundle-dark .satv-bundle-cta {
+  position: relative;
+  z-index: 2;
+  min-width: 260px;
+  text-align: center;
+}
+
+.satv-bundle-dark .satv-btn {
+  width: 100%;
+  min-height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 900;
+  box-shadow: 0 18px 35px rgba(37, 99, 235, 0.40);
+  transition: all 0.3s ease;
+}
+
+.satv-bundle-dark .satv-btn:hover {
+  color: #ffffff;
+  transform: translateY(-4px);
+  box-shadow: 0 24px 48px rgba(37, 99, 235, 0.55);
+}
+
+.satv-bundle-dark .satv-btn svg {
+  width: 21px;
+  height: 21px;
+}
+
+.satv-bundle-dark .satv-bundle-smtxt {
+  display: block;
+  margin-top: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #94a3b8;
+}
+
+.satv-bundle-dark .satv-a {
+  animation-name: satvBundleFadeUp;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+}
+
+.satv-bundle-dark .satv-v {
+  opacity: 0;
+}
+
+@keyframes satvBundleFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+@media (max-width: 1199px) {
+  .satv-directv-white .satv-p-card {
+    min-height: 610px;
+  }
+}
+
+
+
+
+@media (max-width: 991px) {
+  .satv-feats {
+    padding: 70px 0;
+  }
+
+  .satv-sec-h {
+    font-size: 36px;
+  }
+
+  .satv-bento-card {
+    padding: 28px;
+  }
+    .satv-cable-pricing {
+    padding: 70px 0;
+  }
+
+  .satv-pop {
+    transform: scale(1);
+  }
+
+  .satv-pop:hover {
+    transform: translateY(-10px);
+  }
+
+  .satv-p-card {
+    min-height: auto;
+  }
+    .satv-directv-white {
+    padding: 70px 0;
+  }
+
+  .satv-directv-white .satv-sec-h {
+    font-size: 36px;
+  }
+
+  .satv-directv-white .satv-p-card {
+    min-height: auto;
+  }
+
+  .satv-directv-white .satv-p-note-sm {
+    min-height: auto;
+  }
+   .satv-setup-white {
+    padding: 70px 0;
+  }
+
+  .satv-setup-white .satv-sec-h {
+    font-size: 36px;
+  }
+
+  .satv-setup-white .satv-tl-card {
+    min-height: auto;
+  }
+    .satv-bundle-dark {
+    padding: 70px 0;
+  }
+
+  .satv-bundle-dark .satv-bundle-card {
+    padding: 40px 32px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .satv-bundle-dark .satv-bundle-h {
+    font-size: 34px;
+  }
+
+  .satv-bundle-dark .satv-bundle-pills {
+    justify-content: center;
+  }
+
+  .satv-bundle-dark .satv-bundle-cta {
+    width: 100%;
+    max-width: 330px;
+  }
+}
+
+@media (max-width: 575px) {
+  .satv-sec-h {
+    font-size: 30px;
+  }
+
+  .satv-badge {
+    font-size: 13px;
+    padding: 9px 14px;
+  }
+
+  .satv-b-t {
+    font-size: 22px;
+  }
+
+  .satv-b-d {
+    font-size: 15px;
+  }
+   .satv-p-note {
+    font-size: 15px;
+    margin-bottom: 35px;
+  }
+
+  .satv-p-card {
+    padding: 30px 24px;
+    border-radius: 24px;
+  }
+
+  .satv-p-price {
+    font-size: 48px;
+  }
+
+  .satv-p-name {
+    font-size: 23px;
+  }
+
+  .satv-pop-tag {
+    position: static;
+    display: inline-block;
+    width: fit-content;
+    margin-bottom: 14px;
+  }
+    .satv-directv-white {
+    padding: 60px 0;
+  }
+
+  .satv-directv-white .satv-sec-h {
+    font-size: 30px;
+  }
+
+  .satv-directv-white .satv-badge {
+    font-size: 13px;
+    padding: 9px 14px;
+  }
+
+  .satv-directv-white .satv-p-note {
+    font-size: 15px;
+    margin-bottom: 35px;
+  }
+
+  .satv-directv-white .satv-p-card {
+    padding: 28px 22px;
+    border-radius: 22px;
+  }
+
+  .satv-directv-white .satv-p-price {
+    font-size: 44px;
+  }
+
+  .satv-directv-white .satv-p-name {
+    font-size: 21px;
+  }
+
+  .satv-directv-white .satv-pop-tag {
+    position: static;
+    display: inline-block;
+    width: fit-content;
+    margin-bottom: 14px;
+  }
+    .satv-setup-white {
+    padding: 60px 0;
+  }
+
+  .satv-setup-white .satv-sec-h {
+    font-size: 30px;
+  }
+
+  .satv-setup-white .satv-badge {
+    font-size: 13px;
+    padding: 9px 14px;
+  }
+
+  .satv-setup-white .satv-tl-card {
+    padding: 32px 22px;
+    border-radius: 22px;
+  }
+
+  .satv-setup-white .satv-tl-t {
+    font-size: 21px;
+  }
+
+  .satv-setup-white .satv-tl-d {
+    font-size: 15px;
+  }
+    .satv-bundle-dark {
+    padding: 60px 0;
+  }
+
+  .satv-bundle-dark .satv-bundle-card {
+    padding: 32px 22px;
+    border-radius: 24px;
+  }
+
+  .satv-bundle-dark .satv-bundle-h {
+    font-size: 28px;
+  }
+
+  .satv-bundle-dark .satv-bundle-p {
+    font-size: 15px;
+  }
+
+  .satv-bundle-dark .satv-bundle-pill {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .satv-bundle-dark .satv-btn {
+    font-size: 15px;
+  }
+}

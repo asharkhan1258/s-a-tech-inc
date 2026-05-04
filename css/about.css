@@ -1,0 +1,778 @@
+.saab-hero-stats {
+  margin-top: 35px;
+}
+
+.saab-hstat {
+  height: 100%;
+  padding: 28px 20px;
+  text-align: center;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(14px);
+  transition: all 0.35s ease;
+}
+
+.saab-hstat:hover {
+  transform: translateY(-8px);
+  border-color: rgba(56, 189, 248, 0.6);
+  box-shadow: 0 24px 55px rgba(56, 189, 248, 0.18);
+}
+
+.saab-hstat-val {
+  font-size: 38px;
+  line-height: 1;
+  font-weight: 900;
+  color:#0b63ce;
+  margin-bottom: 10px;
+}
+
+.saab-hstat-lbl {
+  font-size: 15px;
+  font-weight: 700;
+  color: #555;
+}
+
+.saab-a {
+  animation-name: saabFadeUp;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+}
+
+.saab-v {
+  opacity: 0;
+}
+
+@keyframes saabFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.saab-partner-dark {
+  width: 100%;
+  padding: 90px 0;
+  background: linear-gradient(135deg, #050b14 0%, #08111f 45%, #111827 100%);
+  overflow: hidden;
+}
+
+
+
+.saab-partner-dark .saab-sh {
+  margin-bottom: 55px;
+}
+
+.saab-partner-dark .saab-badge {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 50px;
+  background: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  font-size: 15px;
+  font-weight: 800;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  margin-bottom: 18px;
+}
+
+.saab-partner-dark .saab-badge svg {
+  width: 20px;
+  height: 20px;
+}
+
+.saab-partner-dark .saab-sec-h {
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 900;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.saab-partner-dark .saab-sec-h span {
+  color: #38bdf8;
+}
+
+.saab-partner-dark .saab-part-main {
+  position: relative;
+  height: 100%;
+  padding: 42px;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(15px);
+  overflow: hidden;
+  transition: all 0.35s ease;
+}
+
+.saab-partner-dark .saab-part-main::before {
+  content: "";
+  position: absolute;
+  top: -110px;
+  right: -110px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: rgba(56, 189, 248, 0.18);
+  filter: blur(16px);
+}
+
+.saab-partner-dark .saab-part-main:hover {
+  transform: translateY(-8px);
+  border-color: rgba(56, 189, 248, 0.65);
+  box-shadow: 0 28px 70px rgba(56, 189, 248, 0.18);
+}
+
+.saab-partner-dark .saab-pm-tag {
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 15px;
+  border-radius: 50px;
+  background: rgba(34, 197, 94, 0.14);
+  color: #86efac;
+  font-size: 14px;
+  font-weight: 900;
+  border: 1px solid rgba(134, 239, 172, 0.35);
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.saab-partner-dark .saab-pm-tag svg {
+  width: 17px;
+  height: 17px;
+}
+
+.saab-partner-dark .saab-pm-h {
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 900;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.saab-partner-dark .saab-pm-h span {
+  color: #38bdf8;
+}
+
+.saab-partner-dark .saab-pm-p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #cbd5e1;
+  margin-bottom: 26px;
+  position: relative;
+  z-index: 2;
+}
+
+.saab-partner-dark .saab-pm-quote {
+  padding: 20px 22px;
+  border-radius: 20px;
+  background: rgba(56, 189, 248, 0.10);
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  color: #e0f2fe;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: italic;
+  margin-bottom: 28px;
+  position: relative;
+  z-index: 2;
+}
+
+.saab-partner-dark .saab-pm-feats {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 14px;
+  position: relative;
+  z-index: 2;
+}
+
+.saab-partner-dark .saab-pmf {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #dbeafe;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.saab-partner-dark .saab-pmf-ic {
+  min-width: 25px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgba(34, 197, 94, 0.18);
+  color: #86efac;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.saab-partner-dark .saab-pmf-ic svg {
+  width: 14px;
+  height: 14px;
+}
+
+.saab-partner-dark .saab-part-grid {
+  height: 100%;
+}
+
+.saab-partner-dark .saab-pg-card {
+  position: relative;
+  height: 100%;
+  min-height: 210px;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.32);
+  backdrop-filter: blur(15px);
+  overflow: hidden;
+  transition: all 0.35s ease;
+}
+
+.saab-partner-dark .saab-pg-card::before {
+  content: "";
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: rgba(56, 189, 248, 0.16);
+  filter: blur(12px);
+}
+
+.saab-partner-dark .saab-pg-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(56, 189, 248, 0.65);
+  box-shadow: 0 26px 60px rgba(56, 189, 248, 0.18);
+}
+
+.saab-partner-dark .saab-pg-ic {
+  width: 62px;
+  height: 62px;
+  border-radius: 20px;
+  margin: 0 auto 18px auto;
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 14px 28px rgba(37, 99, 235, 0.35);
+  position: relative;
+  z-index: 2;
+}
+
+.saab-partner-dark .saab-pg-ic svg {
+  width: 30px;
+  height: 30px;
+}
+
+.saab-partner-dark .saab-pg-val {
+  font-size: 34px;
+  line-height: 1;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.saab-partner-dark .saab-pg-lbl {
+  font-size: 15px;
+  font-weight: 800;
+  color: #cbd5e1;
+  position: relative;
+  z-index: 2;
+}
+
+.saab-partner-dark .saab-a {
+  animation-name: saabPartnerFadeUp;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+}
+
+.saab-partner-dark .saab-v {
+  opacity: 0;
+}
+
+@keyframes saabPartnerFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.saab-values-white {
+  width: 100%;
+  padding: 90px 0;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+
+
+.saab-values-white .saab-sh {
+  margin-bottom: 55px;
+}
+
+.saab-values-white .saab-badge {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 50px;
+  background: #eef6ff;
+  color: #0b63ce;
+  font-size: 15px;
+  font-weight: 800;
+  border: 1px solid #cfe3ff;
+  margin-bottom: 18px;
+}
+
+.saab-values-white .saab-badge svg {
+  width: 20px;
+  height: 20px;
+}
+
+.saab-values-white .saab-sec-h {
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 900;
+  line-height: 1.2;
+  color: #102033;
+}
+
+.saab-values-white .saab-sec-h span {
+  color: #0b63ce;
+}
+
+.saab-values-white .saab-val-row {
+  align-items: stretch;
+}
+
+.saab-values-white .saab-val-card {
+  position: relative;
+  height: 100%;
+  min-height: 315px;
+  padding: 36px 30px;
+  border-radius: 28px;
+  background: #ffffff;
+  border: 1px solid #e3eaf3;
+  box-shadow: 0 18px 45px rgba(15, 35, 70, 0.10);
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+.saab-values-white .saab-val-card::before {
+  content: "";
+  position: absolute;
+  top: -85px;
+  right: -85px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: rgba(11, 99, 206, 0.10);
+  filter: blur(10px);
+}
+
+.saab-values-white .saab-val-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(11, 99, 206, 0.45);
+  box-shadow: 0 24px 60px rgba(11, 99, 206, 0.16);
+}
+
+.saab-values-white .saab-vc-ic {
+  width: 70px;
+  height: 70px;
+  border-radius: 22px;
+  margin-bottom: 24px;
+  background: #eef6ff;
+  color: #0b63ce;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #cfe3ff;
+  position: relative;
+  z-index: 2;
+}
+
+.saab-values-white .saab-vc-ic svg {
+  width: 34px;
+  height: 34px;
+}
+
+.saab-values-white .saab-vc-t {
+  font-size: 24px;
+  font-weight: 900;
+  color: #102033;
+  margin-bottom: 14px;
+  position: relative;
+  z-index: 2;
+}
+
+.saab-values-white .saab-vc-d {
+  font-size: 15.5px;
+  line-height: 1.75;
+  color: #5b6676;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.saab-values-white .saab-a {
+  animation-name: saabValuesFadeUp;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+}
+
+.saab-values-white .saab-v {
+  opacity: 0;
+}
+
+@keyframes saabValuesFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.saab-why-white {
+  width: 100%;
+  padding: 90px 0;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+
+
+.saab-why-white .saab-why-grid {
+  align-items: center;
+}
+
+.saab-why-white .saab-why-img {
+  width: 100%;
+  height: 100%;
+  min-height: 430px;
+  object-fit: cover;
+  border-radius: 32px;
+  border: 1px solid #e3eaf3;
+  box-shadow: 0 22px 55px rgba(15, 35, 70, 0.14);
+  display: block;
+}
+
+.saab-why-white .saab-why-text {
+  position: relative;
+  height: 100%;
+  padding: 42px;
+  border-radius: 32px;
+  background: #ffffff;
+  border: 1px solid #e3eaf3;
+  box-shadow: 0 18px 45px rgba(15, 35, 70, 0.10);
+  overflow: hidden;
+}
+
+.saab-why-white .saab-why-text::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background: rgba(11, 99, 206, 0.10);
+  filter: blur(12px);
+}
+
+.saab-why-white .saab-badge {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 50px;
+  background: #eef6ff;
+  color: #0b63ce;
+  font-size: 15px;
+  font-weight: 800;
+  border: 1px solid #cfe3ff;
+  margin-bottom: 22px;
+  position: relative;
+  z-index: 2;
+}
+
+.saab-why-white .saab-badge svg {
+  width: 20px;
+  height: 20px;
+}
+
+.saab-why-white .saab-why-h {
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 900;
+  line-height: 1.2;
+  color: #102033;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.saab-why-white .saab-why-h span {
+  color: #0b63ce;
+}
+
+.saab-why-white .saab-why-p {
+  font-size: 16.5px;
+  line-height: 1.8;
+  color: #5b6676;
+  margin-bottom: 18px;
+  position: relative;
+  z-index: 2;
+}
+
+.saab-why-white .saab-why-hl {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 22px;
+  margin-top: 28px;
+  border-radius: 24px;
+  background: #f8fbff;
+  border: 1px solid #e3eaf3;
+  position: relative;
+  z-index: 2;
+}
+
+.saab-why-white .saab-why-hl-ic {
+  min-width: 58px;
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  background: #eef6ff;
+  color: #0b63ce;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #cfe3ff;
+}
+
+.saab-why-white .saab-why-hl-ic svg {
+  width: 28px;
+  height: 28px;
+}
+
+.saab-why-white .saab-why-hl-t {
+  font-size: 19px;
+  font-weight: 900;
+  color: #102033;
+  margin: 0 0 8px 0;
+}
+
+.saab-why-white .saab-why-hl-d {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #5b6676;
+  margin: 0;
+}
+
+.saab-why-white .saab-a {
+  animation-name: saabWhyFadeUp;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+}
+
+.saab-why-white .saab-v {
+  opacity: 0;
+}
+
+@keyframes saabWhyFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.saab-final-dark {
+  width: 100%;
+  padding: 90px 0;
+  background: linear-gradient(135deg, #050b14 0%, #08111f 45%, #111827 100%);
+  overflow: hidden;
+}
+
+
+
+.saab-final-dark .saab-final-card {
+  position: relative;
+  width: 100%;
+  padding: 60px 40px;
+  text-align: center;
+  border-radius: 34px;
+  background: linear-gradient(135deg, #08111f 0%, #0b1f35 55%, #111827 100%);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.40);
+  overflow: hidden;
+}
+
+.saab-final-dark .saab-final-card::before {
+  content: "";
+  position: absolute;
+  top: -120px;
+  right: -120px;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: rgba(56, 189, 248, 0.18);
+  filter: blur(18px);
+}
+
+.saab-final-dark .saab-final-card::after {
+  content: "";
+  position: absolute;
+  bottom: -120px;
+  left: -120px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: rgba(34, 197, 94, 0.12);
+  filter: blur(18px);
+}
+
+.saab-final-dark .saab-final-h {
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.2;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 18px;
+  position: relative;
+  z-index: 2;
+}
+
+.saab-final-dark .saab-final-h span {
+  color: #38bdf8;
+}
+
+.saab-final-dark .saab-final-p {
+  max-width: 760px;
+  margin: 0 auto 28px auto;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #cbd5e1;
+  position: relative;
+  z-index: 2;
+}
+
+.saab-final-dark .saab-btn {
+  min-height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 900;
+  padding: 14px 28px;
+  box-shadow: 0 18px 35px rgba(37, 99, 235, 0.40);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.saab-final-dark .saab-btn:hover {
+  color: #ffffff;
+  transform: translateY(-4px);
+  box-shadow: 0 24px 48px rgba(37, 99, 235, 0.55);
+}
+
+.saab-final-dark .saab-btn svg {
+  width: 21px;
+  height: 21px;
+}
+
+.saab-final-dark .saab-final-trust {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+  position: relative;
+  z-index: 2;
+}
+
+.saab-final-dark .saab-ft {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #dbeafe;
+  font-size: 14px;
+  font-weight: 800;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.saab-final-dark .saab-ft svg {
+  width: 18px;
+  height: 18px;
+  color: #38bdf8;
+}
+
+.saab-final-dark .saab-a {
+  animation-name: saabFinalFadeUp;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+}
+
+.saab-final-dark .saab-v {
+  opacity: 0;
+}
+
+@keyframes saabFinalFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

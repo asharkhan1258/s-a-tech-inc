@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S&A tech inc</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/verizon.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-2 shadow-sm sticky-top">
+    <div class="container align-items-center">
+        <a class="navbar-brand fw-bold" href="#"><img src="https://gettvinternet.online/wp-content/uploads/2026/03/SA-Tech-INC.png" alt="" width="100px"></a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="cable.html">Cable</a></li>
+                <li class="nav-item"><a class="nav-link" href="internet.html">Internet</a></li>
+                <li class="nav-item dropdown">
+  <a
+    class="nav-link dropdown-toggle"
+    href="#"
+    id="servicesDropdown"
+    role="button"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  >
+    Services
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+    <li><a class="dropdown-item" href="verizon.html">Verizon</a></li>
+   <li><a class="dropdown-item" href="#">Frontier</a></li>
+    <li><a class="dropdown-item" href="spectrum.html">Spectrum</a></li>
+    <li><a class="dropdown-item" href="#">Kinetic</a></li>
+    <li><a class="dropdown-item" href="xfinity.html">Xfinity</a></li>
+  </ul>
+</li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            </ul>
+
+            <a href="tel:18663147409"  class="btn call-btn">
+                <i class="fa fa-phone"></i> 1 (866) 314-7409
+            </a>
+        </div>
+    </div>
+</nav>
+<div class="banner bg-dark text-white text-center py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+
+        <h5 class="">
+          Get up to a $500 credit to switch
+        </h5>
+
+        <p class="banner__disc">
+          We'll help cover the cost of early termination fees.
+          <u onclick="openModal(event)" data-target="credit-switch-modal" class="cursor-pointer d-inline-block">
+            See full terms
+          </u>
+        </p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="container">
+    <div class="row justify-content-center align-items-center g-5">
+
+      <div class="col-12 col-md-10 order-md-2 col-lg-6 offset-lg-1">
+        <div class="flow__question-container hero__flow">
+
+          <p class="hero__flow-header d-flex justify-content-center align-items-center">
+            <span>
+              Get your Verizon Home<br class="d-sm-none"> Internet deals here
+            </span>
+          </p>
+
+          <div class="hero__flow-body" data-scout="q_know_which_speed">
+
+            <p class="flow__question">
+              Do you know what internet speed you need?
+            </p>
+
+            <button
+              class="button button--white button--flow hero__flow-button"
+              onclick="stepForward(this)"
+              data-next="step-2a"
+            >
+              Yes
+            </button>
+
+            <button
+              class="button button--white button--flow hero__flow-button"
+              onclick="stepForward(this)"
+              data-next="step-2b"
+            >
+              No, help me find a plan
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-12 col-md-10 order-md-1 col-lg-5">
+
+        <h1 class="hero__title">
+          Get fast &amp; reliable<br> Fios Internet.
+        </h1>
+
+        <div class="d-md-flex align-items-center d-lg-block">
+
+          <div>
+            <p class="hero__starting">Starting at</p>
+
+            <div class="hero__price d-flex align-items-start">
+              <p class="hero__price-large"><sup>$</sup>35</p>
+              <p class="hero__price-small">/mo.</p>
+            </div>
+
+            <p class="hero__disc">
+              With Auto Pay and any Verizon
+              <br class="d-none d-md-block d-lg-none"> mobile plan.
+              <u
+                onclick="openModal(event)"
+                data-target="hero-modal"
+                class="cursor-pointer d-inline-block"
+              >
+                See details
+              </u>
+            </p>
+          </div>
+
+          <ul class="hero__list">
+            <li>No surprise hikes, annual contracts, or hidden fees</li>
+            <li>No equipment charges</li>
+            <li>100% fiber-optic network</li>
+          </ul>
+
+          <div class="d-none d-lg-block">
+            <a
+              href="tel:424-277-3379"
+              placeholder="424-277-3379"
+              ringpoolid="31728"
+              class="button button--black hero__call af-tel"
+            >
+              Call 424-277-3379
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="wondering">
+  <div class="container">
+
+    <div class="row justify-content-center text-center">
+
+      <div class="col-12">
+
+        <p class="wondering__title">
+          <b>
+            Wondering which Verizon Internet plan is
+            <br class="d-none d-md-block d-lg-none">
+            right for you?
+          </b>
+          <br>
+          Our experts are here to help.
+        </p>
+
+        <p class="wondering__agents d-flex align-items-center justify-content-center">
+          <span class="wondering__agents-dot"></span>
+          Agents available 24/7
+        </p>
+
+      </div>
+
+      <div class="col-9 col-sm-8 col-md-4 col-lg-3">
+
+        <a
+          href="tel:424-277-3379"
+          placeholder="424-277-3379"
+          ringpoolid="31728"
+          class="button button--white af-tel"
+        >
+          Call 424-277-3379
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="plans">
+  <div class="container">
+
+    <div class="row justify-content-center text-center">
+      <div class="col-12">
+
+        <h1 class="plans__title">
+          Reliable, fast <span class="d-inline-block">high-speed</span> internet
+        </h1>
+
+        <p class="plans__subtitle">
+          No annual contract,<br class="d-sm-none"> no equipment charges
+        </p>
+
+        <p class="plans__disclaimer">
+          $99 professional setup charge may apply. Waived for select plans and locations.
+        </p>
+
+        <div class="plans__toggle d-flex justify-content-center flex-wrap gap-2" role="tablist">
+          <button
+            class="plans__toggle-btn button button--square active"
+            data-bs-toggle="pill"
+            data-bs-target="#fios-internet"
+            type="button"
+            role="tab"
+          >
+            Fios Internet
+          </button>
+
+          <button
+            class="plans__toggle-btn button button--square"
+            data-bs-toggle="pill"
+            data-bs-target="#home-5g-internet"
+            type="button"
+            role="tab"
+          >
+            5G Home Internet
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="tab-content plans__container">
+
+      <!-- Fios Internet -->
+      <div class="tab-pane fade show active" id="fios-internet" role="tabpanel">
+        <div class="row g-4 justify-content-center">
+
+          <!-- 500 Mbps -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="plan plan--500">
+              <h1 class="plan__title">500 Mbps</h1>
+
+              <div class="plan__price d-md-flex align-items-center">
+                <p class="plan__price--large">$59.99</p>
+                <p class="plan__price--small">
+                  /mo. with Auto Pay &amp; any Verizon mobile phone plan.
+                  <u onclick="openModal(event)" data-target="fios-500-modal" class="cursor-pointer d-inline-block">
+                    See details
+                  </u>
+                </p>
+              </div>
+
+              <p class="plan__price-disc">
+                <b>$74.99</b>/mo. with Auto Pay &amp; without any Verizon phone plan.
+                <br class="d-none d-lg-block">
+                Fios plan prices include taxes &amp; fees.
+              </p>
+
+              <a href="tel:424-277-3379" placeholder="424-277-3379" ringpoolid="31728" class="button button--black plan__call af-tel">
+                Call to order 424-277-3379
+              </a>
+
+              <a href="#" target="_blank" rel="noopener noreferrer" class="plan__availability" aria-label="Opens in New Window - 500 Mbps Availability">
+                Check Availability
+              </a>
+
+              <hr class="plan__divider">
+
+              <h2 class="plan__included"><strong>Included with 500 Mbps:</strong></h2>
+
+              <ul class="plan__list">
+                <li>Router rental included</li>
+                <li>
+                  4-year price guarantee
+                  <span>
+                    <u onclick="openModal(event)" data-target="price-guarantee-modal-4year" class="cursor-pointer d-inline-block">
+                      See details
+                    </u>
+                  </span>
+                </li>
+                <li>Great for multiple users, binge streaming and sharing large files.</li>
+                <li>
+                  Get up to a $500 credit to switch<br>
+                  <span>
+                    We'll help cover the cost of early termination fees.
+                    <u onclick="openModal(event)" data-target="500-credit-modal" class="cursor-pointer d-inline-block">
+                      See details
+                    </u>
+                  </span>
+                </li>
+              </ul>
+
+              <h2 class="plan__included"><strong>Plan Extras</strong></h2>
+
+              <p class="plan__choice"><strong>Your choice of:</strong></p>
+
+              <p class="plan__option">
+                Save $500 on $799+ Samsung tech, on us. When you buy an eligible item $799 or more at Best Buy®.
+                <span>
+                  <u onclick="openModal(event)" data-target="samsung-500-off-modal" class="cursor-pointer d-inline-block">
+                    See details
+                  </u>
+                </span>
+              </p>
+
+              <p class="plan__choice"><strong>OR</strong></p>
+
+              <p class="plan__option">
+                Get $15 off per month for 36 months.
+                <span>
+                  <u onclick="openModal(event)" data-target="15-off-per-month-500-modal" class="cursor-pointer d-inline-block">
+                    See details
+                  </u>
+                </span>
+              </p>
+            </div>
+          </div>
+
+          <!-- 1 Gig -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="plan plan--1gig plan--featured">
+              <h1 class="plan__title">1 Gig</h1>
+
+              <div class="plan__price d-md-flex align-items-center">
+                <p class="plan__price--large">$74.99</p>
+                <p class="plan__price--small">
+                  /mo. with Auto Pay &amp; any Verizon mobile phone plan.
+                  <u onclick="openModal(event)" data-target="fios-1gig-modal" class="cursor-pointer d-inline-block">
+                    See details
+                  </u>
+                </p>
+              </div>
+
+              <p class="plan__price-disc">
+                <b>$89.99</b>/mo. with Auto Pay &amp; without any Verizon phone plan.
+                <br class="d-none d-lg-block">
+                Fios plan prices include taxes &amp; fees.
+              </p>
+
+              <a href="tel:424-277-3379" placeholder="424-277-3379" ringpoolid="31728" class="button button--black plan__call af-tel">
+                Call to order 424-277-3379
+              </a>
+
+              <a href="#" target="_blank" rel="noopener noreferrer" class="plan__availability" aria-label="Opens in New Window - 1 Gig Availability">
+                Check Availability
+              </a>
+
+              <hr class="plan__divider">
+
+              <h2 class="plan__included"><strong>Included with 1 Gig:</strong></h2>
+
+              <ul class="plan__list">
+                <li>
+                  Whole-Home Wi-Fi included
+                  <span>
+                    <u onclick="openModal(event)" data-target="whole-wifi-modal" class="cursor-pointer d-inline-block">
+                      See details
+                    </u>
+                  </span>
+                </li>
+                <li>
+                  5-year price guarantee
+                  <span>
+                    <u onclick="openModal(event)" data-target="price-guarantee-modal-5year" class="cursor-pointer d-inline-block">
+                      See details
+                    </u>
+                  </span>
+                </li>
+                <li>Ideal for a virtually seamless entertainment experience.</li>
+                <li>
+                  Get up to a $500 credit to switch<br>
+                  <span>
+                    We'll help cover the cost of early termination fees.
+                    <u onclick="openModal(event)" data-target="500-credit-modal" class="cursor-pointer d-inline-block">
+                      See details
+                    </u>
+                  </span>
+                </li>
+              </ul>
+
+              <h2 class="plan__included"><strong>Plan Extras</strong></h2>
+
+              <p class="plan__choice"><strong>Your choice of:</strong></p>
+
+              <p class="plan__option">
+                Save $500 on $799+ Samsung tech, on us. When you buy an eligible item $799 or more at Best Buy®.
+                <span>
+                  <u onclick="openModal(event)" data-target="samsung-500-off-modal" class="cursor-pointer d-inline-block">
+                    See details
+                  </u>
+                </span>
+              </p>
+
+              <p class="plan__choice"><strong>PLUS</strong></p>
+
+              <p class="plan__option">
+                Get Ray-Ban Meta (Gen 1) glasses included. Up to $299 value.
+                <span>
+                  <u onclick="openModal(event)" data-target="rayban-modal-1gig" class="cursor-pointer d-inline-block">
+                    See details
+                  </u>
+                </span>
+              </p>
+
+              <p class="plan__choice"><strong>OR</strong></p>
+
+              <p class="plan__option">
+                Get $15 off per month for 36 months.
+                <span>
+                  <u onclick="openModal(event)" data-target="15-off-per-month-1-modal" class="cursor-pointer d-inline-block">
+                    See details
+                  </u>
+                </span>
+              </p>
+            </div>
+          </div>
+
+          <!-- 300 Mbps -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="plan plan--300">
+              <h1 class="plan__title">300 Mbps</h1>
+
+              <div class="plan__price d-md-flex align-items-center">
+                <p class="plan__price--large">$34.99</p>
+                <p class="plan__price--small">
+                  /mo. with Auto Pay &amp; any Verizon mobile phone plan.
+                  <u onclick="openModal(event)" data-target="fios-300-modal" class="cursor-pointer d-inline-block">
+                    See details
+                  </u>
+                </p>
+              </div>
+
+              <p class="plan__price-disc">
+                <b>$49.99</b>/mo. with Auto Pay &amp; without any Verizon phone plan.
+                <br class="d-none d-lg-block">
+                Fios plan prices include taxes &amp; fees.
+              </p>
+
+              <a href="tel:424-277-3379" placeholder="424-277-3379" ringpoolid="31728" class="button button--black plan__call af-tel">
+                Call to order 424-277-3379
+              </a>
+
+              <a href="#" target="_blank" rel="noopener noreferrer" class="plan__availability" aria-label="Opens in New Window - 300 Mbps Availability">
+                Check Availability
+              </a>
+
+              <hr class="plan__divider">
+
+              <h2 class="plan__included"><strong>Included with 300 Mbps:</strong></h2>
+
+              <ul class="plan__list">
+                <li>Router rental included</li>
+                <li>
+                  3-year price guarantee
+                  <span>
+                    <u onclick="openModal(event)" data-target="price-guarantee-modal-3year" class="cursor-pointer d-inline-block">
+                      See details
+                    </u>
+                  </span>
+                </li>
+                <li>Stream and download movies, shows, and photos.</li>
+                <li>
+                  Get up to a $500 credit to switch<br>
+                  <span>
+                    We'll help cover the cost of early termination fees.
+                    <u onclick="openModal(event)" data-target="500-credit-modal" class="cursor-pointer d-inline-block">
+                      See details
+                    </u>
+                  </span>
+                </li>
+              </ul>
+
+              <h2 class="plan__included"><strong>Plan Extras</strong></h2>
+
+              <p class="plan__choice"><strong>Your choice of:</strong></p>
+
+              <p class="plan__option">
+                Save $500 on $799+ Samsung tech, on us. When you buy an eligible item $799 or more at Best Buy®.
+                <span>
+                  <u onclick="openModal(event)" data-target="samsung-500-off-modal" class="cursor-pointer d-inline-block">
+                    See details
+                  </u>
+                </span>
+              </p>
+
+              <p class="plan__choice"><strong>OR</strong></p>
+
+              <p class="plan__option">
+                Get $15 off per month for 36 months.
+                <span>
+                  <u onclick="openModal(event)" data-target="15-off-per-month-300-modal" class="cursor-pointer d-inline-block">
+                    See details
+                  </u>
+                </span>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 5G Home Internet -->
+      <div class="tab-pane fade" id="home-5g-internet" role="tabpanel">
+        <div class="row g-4 justify-content-center">
+
+          <!-- 5G Home Plus -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="plan plan--five-plus">
+              <h1 class="plan__title">5G Home Plus</h1>
+
+              <div class="plan__price d-md-flex align-items-center">
+                <p class="plan__price--large">$45</p>
+                <p class="plan__price--small">
+                  /mo. with Auto Pay &amp; any Verizon mobile phone plan.
+                  <u onclick="openModal(event)" data-target="5g-home-plus-modal" class="cursor-pointer d-inline-block">
+                    See details
+                  </u>
+                </p>
+              </div>
+
+              <p class="plan__price-disc">
+                <strong>$70</strong>/mo without Auto Pay &amp; without any Verizon phone plan.
+                <br class="d-none d-lg-block">
+                Plan prices include taxes and fees.
+              </p>
+
+              <a href="tel:424-277-3379" placeholder="424-277-3379" ringpoolid="31728" class="button button--black plan__call af-tel">
+                Call to order 424-277-3379
+              </a>
+
+              <a href="#" target="_blank" rel="noopener noreferrer" class="plan__availability" aria-label="Opens in New Window - 5G Home Plus Availability">
+                Check Availability
+              </a>
+
+              <hr class="plan__divider">
+
+              <h2 class="plan__included"><strong>Included with 5G Home Plus:</strong></h2>
+
+              <ul class="plan__list">
+                <li>Faster speeds</li>
+                <li>
+                  Unlimited premium data<br>
+                  <span>
+                    Consumer data usage is subject to the usage restrictions set forth in Verizon's terms of service; visit:
+                    <a href="https://www.verizon.com/support/customer-agreement/" target="_blank" aria-label="Verizon's terms of service">
+                      https://www.verizon.com/support/customer-agreement/
+                    </a>
+                  </span>
+                </li>
+                <li>
+                  4-year price guarantee
+                  <span>
+                    <u onclick="openModal(event)" data-target="price-guarantee-modal-4year" class="cursor-pointer d-inline-block">
+                      See details
+                    </u>
+                  </span>
+                </li>
+                <li>1080p HD video streaming</li>
+                <li>Router included</li>
+                <li>
+                  Get up to a $500 credit to switch<br>
+                  <span>
+                    We'll help cover the cost of early termination fees.
+                    <u onclick="openModal(event)" data-target="500-credit-modal" class="cursor-pointer d-inline-block">
+                      See details
+                    </u>
+                  </span>
+                </li>
+              </ul>
+
+              <h2 class="plan__included"><strong>Plan Extras</strong></h2>
+
+              <p class="plan__option">
+                Save $20/mo on YouTube TV. $62.99/mo for 6 mos., then $82.99/mo after. For new YouTube TV subscribers.
+                <span>
+                  <u onclick="openModal(event)" data-target="youtube-tv-modal" class="cursor-pointer d-inline-block">
+                    See details
+                  </u>
+                </span>
+              </p>
+            </div>
+          </div>
+
+          <!-- 5G Home Ultimate -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="plan plan--home-ultimate plan--featured">
+              <h1 class="plan__title">5G Home Ultimate</h1>
+
+              <div class="plan__price d-md-flex align-items-center">
+                <p class="plan__price--large">$60</p>
+                <p class="plan__price--small">
+                  /mo. with Auto Pay &amp; any Verizon mobile phone plan.
+                  <u onclick="openModal(event)" data-target="5g-home-ultimate-modal" class="cursor-pointer d-inline-block">
+                    See details
+                  </u>
+                </p>
+              </div>
+
+              <p class="plan__price-disc">
+                <strong>$85</strong>/mo without Auto Pay &amp; without any Verizon phone plan.
+                <br class="d-none d-lg-block">
+                Plan prices include taxes and fees.
+              </p>
+
+              <a href="tel:424-277-3379" placeholder="424-277-3379" ringpoolid="31728" class="button button--black plan__call af-tel">
+                Call to order 424-277-3379
+              </a>
+
+              <a href="#" target="_blank" rel="noopener noreferrer" class="plan__availability" aria-label="Opens in New Window - 5G Home Ultimate Availability">
+                Check Availability
+              </a>
+
+              <hr class="plan__divider">
+
+              <h2 class="plan__included"><strong>Included with 5G Home Ultimate:</strong></h2>
+
+              <ul class="plan__list">
+                <li>Fastest speeds</li>
+                <li>
+                  Unlimited premium data<br>
+                  <span>
+                    Consumer data usage is subject to the usage restrictions set forth in Verizon's terms of service; visit:
+                    <a href="https://www.verizon.com/support/customer-agreement/" target="_blank" aria-label="Verizon's terms of service">
+                      https://www.verizon.com/support/customer-agreement/
+                    </a>
+                  </span>
+                </li>
+                <li>
+                  5-year price guarantee
+                  <span>
+                    <u onclick="openModal(event)" data-target="price-guarantee-modal-5year" class="cursor-pointer d-inline-block">
+                      See details
+                    </u>
+                  </span>
+                </li>
+                <li>Ultra HD 4K video streaming</li>
+                <li>
+                  Router + Whole-Home Wi-Fi
+                  <span>
+                    <u onclick="openModal(event)" data-target="whole-wifi-ultimate-modal" class="cursor-pointer d-inline-block">
+                      See details
+                    </u>
+                  </span>
+                  <br>
+                  <ul>
+                    <li>1 Wi-Fi Extender</li>
+                    <li>Free router upgrade after 3 years</li>
+                  </ul>
+                </li>
+                <li>
+                  Get up to a $500 credit to switch<br>
+                  <span>
+                    We'll help cover the cost of early termination fees.
+                    <u onclick="openModal(event)" data-target="500-credit-modal" class="cursor-pointer d-inline-block">
+                      See details
+                    </u>
+                  </span>
+                </li>
+              </ul>
+
+              <h2 class="plan__included"><strong>Plan Extras</strong></h2>
+
+              <p class="plan__option">
+                Save $500 on $799+ Samsung tech, on us. When you buy an eligible item $799 or more at Best Buy®.
+                <span>
+                  <u onclick="openModal(event)" data-target="samsung-500-off-5g-modal" class="cursor-pointer d-inline-block">
+                    See details
+                  </u>
+                </span>
+              </p>
+
+              <p class="plan__choice"><strong>PLUS</strong></p>
+
+              <p class="plan__option">
+                Save $20/mo on YouTube TV. $62.99/mo for 6 mos., then $82.99/mo after. For new YouTube TV subscribers.
+                <span>
+                  <u onclick="openModal(event)" data-target="youtube-tv-modal" class="cursor-pointer d-inline-block">
+                    See details
+                  </u>
+                </span>
+              </p>
+            </div>
+          </div>
+
+          <!-- 5G Home -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="plan plan--five">
+              <h1 class="plan__title">5G Home</h1>
+
+              <div class="plan__price d-md-flex align-items-center">
+                <p class="plan__price--large">$35</p>
+                <p class="plan__price--small">
+                  /mo. with Auto Pay &amp; any Verizon mobile phone plan.
+                  <u onclick="openModal(event)" data-target="5g-home-modal" class="cursor-pointer d-inline-block">
+                    See details
+                  </u>
+                </p>
+              </div>
+
+              <p class="plan__price-disc">
+                <strong>$60</strong>/mo without Auto Pay &amp; without any Verizon phone plan.
+                <br class="d-none d-lg-block">
+                Plan prices include taxes and fees.
+              </p>
+
+              <a href="tel:424-277-3379" placeholder="424-277-3379" ringpoolid="31728" class="button button--black plan__call af-tel">
+                Call to order 424-277-3379
+              </a>
+
+              <a href="#" target="_blank" rel="noopener noreferrer" class="plan__availability" aria-label="Opens in New Window - 5G Home Availability">
+                Check Availability
+              </a>
+
+              <hr class="plan__divider">
+
+              <h2 class="plan__included"><strong>Included with 5G Home:</strong></h2>
+
+              <ul class="plan__list">
+                <li>Fast speeds</li>
+                <li>
+                  Unlimited data<br>
+                  <span>
+                    Consumer data usage is subject to the usage restrictions set forth in Verizon's terms of service; visit:
+                    <a href="https://www.verizon.com/support/customer-agreement/" target="_blank" aria-label="Verizon's terms of service">
+                      https://www.verizon.com/support/customer-agreement/
+                    </a>
+                  </span>
+                </li>
+                <li>
+                  3-year price guarantee
+                  <span>
+                    <u onclick="openModal(event)" data-target="price-guarantee-modal-3year" class="cursor-pointer d-inline-block">
+                      See details
+                    </u>
+                  </span>
+                </li>
+                <li>1080p HD video streaming</li>
+                <li>Router included</li>
+                <li>
+                  Get up to a $500 credit to switch<br>
+                  <span>
+                    We'll help cover the cost of early termination fees.
+                    <u onclick="openModal(event)" data-target="500-credit-modal" class="cursor-pointer d-inline-block">
+                      See details
+                    </u>
+                  </span>
+                </li>
+              </ul>
+
+              <h2 class="plan__included"><strong>Plan Extras</strong></h2>
+
+              <p class="plan__option">
+                Save $20/mo on YouTube TV. $62.99/mo for 6 mos., then $82.99/mo after. For new YouTube TV subscribers.
+                <span>
+                  <u onclick="openModal(event)" data-target="youtube-tv-modal" class="cursor-pointer d-inline-block">
+                    See details
+                  </u>
+                </span>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-12 text-center">
+        <button class="btn-fios button button--white">
+          <span onclick="openModal(event)" data-target="verizon-fios-internet-modal" class="cursor-pointer">
+            What is Fios Internet?
+          </span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="perks">
+  <div class="container">
+
+    <div class="row justify-content-center text-center">
+      <div class="col-12">
+
+        <header class="perks__header text-white">
+          Choose entertainment on us
+        </header>
+
+        <p class="perks__description text-white">
+          Add one perk on us (up to $10/mo) with select internet plans. 18+. Terms apply.
+          <u class="cursor-pointer" onclick="openModal(event)" data-target="perks-on-credit-modal">
+            See details
+          </u>
+        </p>
+
+      </div>
+    </div>
+
+    <div class="row g-4 justify-content-center perks__grid">
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <section class="perks__card">
+          <img
+            src="https://www.verizonhomeoffers.com/wp-content/themes/verizon-sem-1.0/src/images/perks/netflix-max-new-new.png"
+            alt="Netflix and Max perk"
+            data-target="netflix-max-new-new-modal"
+            onclick="openModal(event)"
+          >
+        </section>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <section class="perks__card">
+          <img
+            src="https://www.verizonhomeoffers.com/wp-content/themes/verizon-sem-1.0/src/images/perks/disney_plus-bundle.png"
+            alt="Disney Plus bundle perk"
+            data-target="disney_plus-bundle-modal"
+            onclick="openModal(event)"
+          >
+        </section>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <section class="perks__card">
+          <img
+            src="https://www.verizonhomeoffers.com/wp-content/themes/verizon-sem-1.0/src/images/perks/apple_one-new.png"
+            alt="Apple One perk"
+            data-target="apple_one-new-modal"
+            onclick="openModal(event)"
+          >
+        </section>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <section class="perks__card">
+          <img
+            src="https://www.verizonhomeoffers.com/wp-content/themes/verizon-sem-1.0/src/images/perks/apple_music-update.png"
+            alt="Apple Music perk"
+            data-target="apple_music-update-modal"
+            onclick="openModal(event)"
+          >
+        </section>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <section class="perks__card">
+          <img
+            src="https://www.verizonhomeoffers.com/wp-content/themes/verizon-sem-1.0/src/images/perks/youtube_premium.png"
+            alt="YouTube Premium perk"
+            data-target="youtube_premium-modal"
+            onclick="openModal(event)"
+          >
+        </section>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <section class="perks__card">
+          <img
+            src="https://www.verizonhomeoffers.com/wp-content/themes/verizon-sem-1.0/src/images/perks/fox_one.png"
+            alt="Fox One perk"
+            data-target="fox_one-modal"
+            onclick="openModal(event)"
+          >
+        </section>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <section class="perks__card">
+          <img
+            src="https://www.verizonhomeoffers.com/wp-content/themes/verizon-sem-1.0/src/images/perks/unlimited_cloud.png"
+            alt="Unlimited cloud perk"
+            data-target="unlimited_cloud-modal"
+            onclick="openModal(event)"
+          >
+        </section>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <section class="perks__card">
+          <img
+            src="https://www.verizonhomeoffers.com/wp-content/themes/verizon-sem-1.0/src/images/perks/home_device.png"
+            alt="Home device perk"
+            data-target="home_device-modal"
+            onclick="openModal(event)"
+          >
+        </section>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <section class="perks__card">
+          <img
+            src="https://www.verizonhomeoffers.com/wp-content/themes/verizon-sem-1.0/src/images/perks/google_one.webp"
+            alt="Google One perk"
+            data-target="google_one-modal"
+            onclick="openModal(event)"
+          >
+        </section>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="switching">
+  <div class="container">
+
+    <div class="row justify-content-center text-center">
+      <div class="col-12">
+
+        <h1 class="switching__title">Switching is simple.</h1>
+
+        <p class="switching__text">
+          Say goodbye to slow internet.<br class="d-md-none">
+          Sign up for Fios or 5G Home, it's easier than ever.
+        </p>
+
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-11 col-md-10 col-lg-12">
+
+        <div class="switching__list">
+
+          <div class="row switching__item align-items-start">
+            <div class="col-12 col-lg-4">
+              <h3 class="switching__item-title">No extra fees</h3>
+            </div>
+
+            <div class="col-12 col-lg-8">
+              <p class="switching__item-text">
+                Easy-to-read bills with no surprises like regional sports network or broadcast fees.
+              </p>
+            </div>
+          </div>
+
+          <div class="row switching__item align-items-start">
+            <div class="col-12 col-lg-4">
+              <h3 class="switching__item-title">
+                No data limits.<sup>*</sup>
+              </h3>
+            </div>
+
+            <div class="col-12 col-lg-8">
+              <p class="switching__item-text">
+                Fios internet plans have no data limits. So you can learn, work and game as much as you need.
+              </p>
+            </div>
+          </div>
+
+          <div class="row switching__item align-items-start">
+            <div class="col-12 col-lg-4">
+              <h3 class="switching__item-title">No annual contracts.</h3>
+            </div>
+
+            <div class="col-12 col-lg-8">
+              <p class="switching__item-text">
+                Say goodbye to annual contracts. You can change your plan month-to-month without early termination fees.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row justify-content-center text-center">
+      <div class="col-12 col-lg-10">
+
+        <p class="switching__usage">
+          <sup>*</sup>Consumer data usage is subject to the usage restrictions set forth in Verizon's terms of service:
+          <a href="https://www.verizon.com/support/customer-agreement/" target="_blank" rel="noopener" aria-label="Opens in New Window - 5G Home">
+            5G Home Internet
+          </a>
+          or
+          <a href="https://www.verizon.com/about/terms-conditions/verizon-customer-agreement" target="_blank" rel="noopener" aria-label="Opens in New Window - Fios internet">
+            Fios internet
+          </a>
+        </p>
+
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-11 col-sm-9 col-md-5 col-lg-3 d-flex justify-content-center">
+
+        <a
+          href="tel:424-277-3379"
+          placeholder="424-277-3379"
+          ringpoolid="31728"
+          class="button button--black button--noborder switching__cta af-tel"
+        >
+          Call to switch 424-277-3379
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="already">
+  <div class="container">
+
+    <div class="row justify-content-center justify-content-md-start">
+
+      <div class="col-12 col-md-5 offset-md-7 col-lg-6 offset-lg-5">
+
+        <p class="already__title">
+          Already a Verizon customer?
+        </p>
+
+        <p class="already__text">
+          Looking to upgrade or move your service?<br class="d-none d-lg-block">
+          One of our experts can assist you.
+        </p>
+
+      </div>
+
+      <div class="col-9 col-sm-7 col-md-4 offset-md-7 col-lg-3 offset-lg-5">
+
+        <a
+          href="tel:424-277-3379"
+          placeholder="424-277-3379"
+          ringpoolid="31728"
+          class="button button--black button--noborder already__cta af-tel"
+        >
+          Call 424-277-3379
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="faq">
+  <div class="container">
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+
+        <h1 class="faq__title">
+          Have questions?<br> We've got answers.
+        </h1>
+
+        <div class="accordion faq__accordion" id="faqAccordion">
+
+          <div class="accordion-item faq__question">
+            <h2 class="accordion-header" id="faqHeadingOne">
+              <button
+                class="accordion-button faq__question-header"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseOne"
+                aria-expanded="true"
+                aria-controls="faqCollapseOne"
+              >
+                What is high speed internet?
+              </button>
+            </h2>
+
+            <div
+              id="faqCollapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="faqHeadingOne"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body faq__question-content">
+                The FCC currently defines high speed broadband internet as minimum 25 Mbps download speed/ 3 Mbps upload speed, but in the Infrastructure Investment and Jobs Act of 2022, Congress set 100 Mbps/20 Mbps as a target for internet speed that is available to everyone. As the average number of devices per household goes up, higher speed connections are important for everyone to have the internet access they need.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item faq__question">
+            <h2 class="accordion-header" id="faqHeadingTwo">
+              <button
+                class="accordion-button collapsed faq__question-header"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseTwo"
+                aria-expanded="false"
+                aria-controls="faqCollapseTwo"
+              >
+                What high speed internet is available in my area?
+              </button>
+            </h2>
+
+            <div
+              id="faqCollapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingTwo"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body faq__question-content">
+                Verizon Home Internet offers a variety of internet speed plans across the United States. Fios service is available in the mid-Atlantic and Northeast, while we've rolled out 5G Home Internet in more and more places across the country. To find out if Verizon offers internet service at your address,
+                <a href="/vzn-bridge/?a=101853&amp;c=111882&amp;s17=ecomClickOut&amp;s1=&amp;s20=" target="_blank" aria-label="opens in a new window - check your availability">
+                  <u>check your availability.</u>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item faq__question">
+            <h2 class="accordion-header" id="faqHeadingThree">
+              <button
+                class="accordion-button collapsed faq__question-header"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseThree"
+                aria-expanded="false"
+                aria-controls="faqCollapseThree"
+              >
+                How much does high speed internet cost?
+              </button>
+            </h2>
+
+            <div
+              id="faqCollapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingThree"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body faq__question-content">
+                If you are a Verizon mobile customer on a select 5G Unlimited plan, you may qualify for a Mobile + Home Discount of up to $25/mo with Auto Pay on Verizon Home Internet*, depending on the internet plan you select. Explore our <u>internet plans</u> for more information about prices and speed tiers.
+
+                <br><br>
+
+                You may even qualify for free high speed internet with the
+                <a href="https://www.verizon.com/home/internet/acp/" target="_blank" aria-label="opens in a new window - Affordable Connectivity Program">
+                  <u>Affordable Connectivity Program</u>
+                </a>
+                (ACP) and the
+                <a href="https://www.verizon.com/home/internet/acp/free-internet/" target="_blank" aria-label="opens in a new window - verizon forward program">
+                  <u>Verizon Forward Program</u>
+                </a>
+                discounts. You must first apply for ACP to verify your eligibility. Households can qualify based on your household income, if you or someone in your household participates in certain federal assistance programs, or if you already receive a Lifeline benefit.
+
+                <br><br>
+
+                *Save $25/mo. with 5G Home Plus and all Fios internet plans when combined with postpaid mobile unlimited plan that includes 5G Ultra Wideband. Fios requires Mobile + Home Discount enrollment; $99 setup and other terms may apply. Auto Pay and paper-free billing req'd. Subject to credit approval.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item faq__question">
+            <h2 class="accordion-header" id="faqHeadingFour">
+              <button
+                class="accordion-button collapsed faq__question-header"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseFour"
+                aria-expanded="false"
+                aria-controls="faqCollapseFour"
+              >
+                What is the best high speed internet service near me?
+              </button>
+            </h2>
+
+            <div
+              id="faqCollapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingFour"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body faq__question-content">
+                You decide. Verizon Home Internet has expanded across the country recently, reaching areas never before possible. We're giving consumers more options for internet providers in hundreds of locations, so you can decide what internet service best fits your needs.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Bootstrap JS -->
+<footer class="saa-ft bg-light pt-5">
+  <div class="container">
+    <div class="row justify-content-between">
+
+      <!-- Left Column: Brand & Contact -->
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="d-flex align-items-center mb-3">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" width="28" height="28" stroke-linecap="round" stroke-linejoin="round" class="me-2">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+          </svg>
+          <span class="fs-5 fw-bold text-dark">S&amp;A Tech <span class="fs-5 fw-bold">INC</span></span>
+        </div>
+        <p class="text-muted">We are an authorized third-party connection expert, helping you compare and enroll in the best internet, TV, and mobile plans nationwide.</p>
+        
+        <!-- Email -->
+        <div class="d-flex align-items-center mt-3 mb-2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" width="20" height="20" class="me-2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <a href="mailto:info@gettvinternet.online" class="text-dark fw-semibold text-decoration-none">info@gettvinternet.online</a>
+        </div>
+
+        <!-- Phone CTA -->
+        <a href="tel:18663147409" class="saa-srv-cta">
+            <i class="fa fa-phone"></i> 1 (866) 314-7409
+          </a>
+      </div>
+
+      <!-- Middle Column: Quick Links -->
+      <div class="col-md-3 mb-4 mb-md-0">
+        <h6 class="fw-bold mb-3 text-primary">Quick Links</h6>
+        <ul class="list-unstyled text-muted">
+          <li class="mb-3"><a href="/" class="text-decoration-none text-muted">Home</a></li>
+          <li class="mb-3"><a href="#" class="text-decoration-none text-muted">About Us</a></li>
+          <li class="mb-3"><a href="#" class="text-decoration-none text-muted">Contact Us</a></li>
+          <li class="mb-3"><a href="#" class="text-decoration-none text-muted">Privacy Policy</a></li>
+          <li><a href="#" class="text-decoration-none text-muted">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Right Column: Our Partners -->
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3 text-primary">Our Partners</h6>
+        <ul class="list-unstyled text-muted">
+          <li class="mb-3"><a href="#" class="text-decoration-none text-muted">Spectrum</a></li>
+          <li class="mb-3"><a href="#" class="text-decoration-none text-muted">Xfinity</a></li>
+          <li class="mb-3"><a href="#" class="text-decoration-none text-muted">Frontier</a></li>
+          <li class="mb-3"><a href="#" class="text-decoration-none text-muted">Optimum</a></li>
+          <li class="mb-3"><a href="#" class="text-decoration-none text-muted">Kinetic</a></li>
+          <li class="mb-3"><a href="#" class="text-decoration-none text-muted">Brightspeed</a></li>
+          <li><a href="#" class="text-decoration-none text-muted">Vivint Home Security</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bottom Dark Bar -->
+  <div class="bg-dark text-light py-3 mt-5">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div>© 2026 S&amp;A Tech INC. All Rights Reserved.</div>
+      
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

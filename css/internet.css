@@ -1,0 +1,925 @@
+.int-speed {
+  width: 100%;
+  padding: 90px 0;
+  background: linear-gradient(135deg, #050b14 0%, #08111f 45%, #111827 100%);
+  overflow: hidden;
+}
+
+
+
+.int-sh {
+  margin-bottom: 55px;
+}
+
+.int-badge {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 50px;
+  background: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  font-size: 15px;
+  font-weight: 800;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  margin-bottom: 18px;
+}
+
+.int-badge svg {
+  width: 20px;
+  height: 20px;
+}
+
+.int-sec-h {
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 900;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.int-sec-h span {
+  color: #38bdf8;
+}
+
+.int-bento {
+  align-items: stretch;
+}
+
+.int-bento-card {
+  position: relative;
+  height: 100%;
+  padding: 34px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(15px);
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+.int-bento-card::before {
+  content: "";
+  position: absolute;
+  top: -85px;
+  right: -85px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: rgba(56, 189, 248, 0.18);
+  filter: blur(12px);
+}
+
+.int-bento-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(56, 189, 248, 0.65);
+  box-shadow: 0 28px 65px rgba(56, 189, 248, 0.18);
+}
+
+.int-b1 {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.20), rgba(255, 255, 255, 0.07));
+}
+
+.int-b2 {
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.18), rgba(255, 255, 255, 0.07));
+}
+
+.int-b3 {
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.18), rgba(255, 255, 255, 0.07));
+}
+
+.int-sp-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 28px;
+  position: relative;
+  z-index: 2;
+}
+
+.int-sp-num {
+  font-size: clamp(44px, 5vw, 58px);
+  line-height: 1;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.int-sp-unit {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 800;
+  color: #94a3b8;
+}
+
+.int-sp-ic {
+  min-width: 64px;
+  width: 64px;
+  height: 64px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 14px 28px rgba(37, 99, 235, 0.35);
+}
+
+.int-sp-ic svg {
+  width: 32px;
+  height: 32px;
+}
+
+.int-sp-h {
+  font-size: 24px;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 14px;
+  position: relative;
+  z-index: 2;
+}
+
+.int-sp-d {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #cbd5e1;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.int-sp-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.int-sp-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 13px;
+  border-radius: 50px;
+  background: rgba(56, 189, 248, 0.12);
+  color: #7dd3fc;
+  font-size: 13.5px;
+  font-weight: 800;
+  border: 1px solid rgba(56, 189, 248, 0.30);
+}
+
+.int-a {
+  animation-name: intFadeUp;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+}
+
+.int-v {
+  opacity: 0;
+}
+
+@keyframes intFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sain-plans-white {
+  width: 100%;
+  padding: 90px 0;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+
+.sain-plans-white .sain-sh {
+  margin-bottom: 50px;
+}
+
+.sain-plans-white .sain-badge {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 50px;
+  background: #eef6ff;
+  color: #0b63ce;
+  font-size: 15px;
+  font-weight: 800;
+  border: 1px solid #cfe3ff;
+  margin-bottom: 18px;
+}
+
+.sain-plans-white .sain-badge svg {
+  width: 20px;
+  height: 20px;
+}
+
+.sain-plans-white .sain-sec-h {
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 900;
+  line-height: 1.2;
+  color: #102033;
+}
+
+.sain-plans-white .sain-sec-h span {
+  color: #0b63ce;
+}
+
+.sain-plans-white .sain-pl-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sain-plans-white .sain-pc {
+  position: relative;
+  width: 100%;
+  padding: 30px;
+  border-radius: 28px;
+  background: #ffffff;
+  border: 1px solid #e3eaf3;
+  box-shadow: 0 18px 45px rgba(15, 35, 70, 0.10);
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+.sain-plans-white .sain-pc::before {
+  content: "";
+  position: absolute;
+  top: -90px;
+  right: -90px;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background: rgba(11, 99, 206, 0.10);
+  filter: blur(10px);
+}
+
+.sain-plans-white .sain-pc:hover {
+  transform: translateY(-8px);
+  border-color: rgba(11, 99, 206, 0.45);
+  box-shadow: 0 24px 60px rgba(11, 99, 206, 0.16);
+}
+
+.sain-plans-white .sain-pop {
+  border: 2px solid #0b63ce;
+  background: linear-gradient(180deg, #f4f9ff 0%, #ffffff 100%);
+}
+
+.sain-plans-white .sain-pop-tag {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 8px 14px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #0b63ce, #14a3ff);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 900;
+  z-index: 2;
+}
+
+.sain-plans-white .sain-pc-left,
+.sain-plans-white .sain-pc-mid,
+.sain-plans-white .sain-pc-right {
+  position: relative;
+  z-index: 2;
+}
+
+.sain-plans-white .sain-pc-tier {
+  width: fit-content;
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 50px;
+  background: #eef6ff;
+  color: #0b63ce;
+  font-size: 14px;
+  font-weight: 900;
+  border: 1px solid #cfe3ff;
+  margin-bottom: 14px;
+}
+
+.sain-plans-white .sain-pc-name {
+  font-size: 25px;
+  font-weight: 900;
+  color: #102033;
+  margin-bottom: 14px;
+}
+
+.sain-plans-white .sain-pc-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.sain-plans-white .sain-pc-price {
+  font-size: 52px;
+  line-height: 1;
+  font-weight: 900;
+  color: #0b63ce;
+}
+
+.sain-plans-white .sain-pc-price small {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.sain-plans-white .sain-pc-per {
+  font-size: 17px;
+  font-weight: 800;
+  color: #667085;
+  margin-bottom: 7px;
+}
+
+.sain-plans-white .sain-pc-promo {
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 14px;
+  border-radius: 50px;
+  background: #ecfdf3;
+  color: #07843f;
+  font-size: 13.5px;
+  font-weight: 900;
+  border: 1px solid #b8ebcc;
+}
+
+.sain-plans-white .sain-pc-promo svg {
+  width: 15px;
+  height: 15px;
+}
+
+.sain-plans-white .sain-pc-mid {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.sain-plans-white .sain-pc-feat {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  border-radius: 50px;
+  background: #f7fbff;
+  color: #344054;
+  font-size: 15px;
+  font-weight: 800;
+  border: 1px solid #e3eaf3;
+}
+
+.sain-plans-white .sain-pc-feat svg {
+  width: 17px;
+  height: 17px;
+  color: #07843f;
+}
+
+.sain-plans-white .sain-pc-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sain-plans-white .sain-btn {
+  width: 100%;
+  max-width: 230px;
+  min-height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #0b63ce, #14a3ff);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 900;
+  box-shadow: 0 14px 30px rgba(11, 99, 206, 0.28);
+  transition: all 0.3s ease;
+}
+
+.sain-plans-white .sain-btn:hover {
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 18px 38px rgba(11, 99, 206, 0.36);
+}
+
+.sain-plans-white .sain-btn svg {
+  width: 19px;
+  height: 19px;
+}
+
+.sain-plans-white .sain-a {
+  animation-name: sainPlansFadeUp;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+}
+
+.sain-plans-white .sain-v {
+  opacity: 0;
+}
+
+@keyframes sainPlansFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sain-compare-white {
+  width: 100%;
+  padding: 90px 0;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+
+.sain-compare-white .sain-sh {
+  margin-bottom: 50px;
+}
+
+.sain-compare-white .sain-badge {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 50px;
+  background: #eef6ff;
+  color: #0b63ce;
+  font-size: 15px;
+  font-weight: 800;
+  border: 1px solid #cfe3ff;
+  margin-bottom: 18px;
+}
+
+.sain-compare-white .sain-badge svg {
+  width: 20px;
+  height: 20px;
+}
+
+.sain-compare-white .sain-sec-h {
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 900;
+  line-height: 1.2;
+  color: #102033;
+}
+
+.sain-compare-white .sain-sec-h span {
+  color: #0b63ce;
+}
+
+.sain-compare-white .sain-cmp-table {
+  position: relative;
+  width: 100%;
+  padding: 28px;
+  border-radius: 30px;
+  background: #ffffff;
+  border: 1px solid #e3eaf3;
+  box-shadow: 0 18px 45px rgba(15, 35, 70, 0.10);
+  overflow: hidden;
+}
+
+.sain-compare-white .sain-cmp-table::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: rgba(11, 99, 206, 0.10);
+  filter: blur(12px);
+}
+
+.sain-compare-white .sain-cmp-scroll {
+  position: relative;
+  z-index: 2;
+  border-radius: 22px;
+  border: 1px solid #e3eaf3;
+}
+
+.sain-compare-white .sain-cmp-inner {
+  min-width: 650px;
+}
+
+.sain-compare-white .sain-cmp-head {
+  background: linear-gradient(135deg, #0b63ce, #14a3ff);
+}
+
+.sain-compare-white .sain-cmp-th {
+  padding: 20px 18px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 900;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.sain-compare-white .sain-cmp-th:first-child {
+  text-align: left;
+}
+
+.sain-compare-white .sain-cmp-th:last-child {
+  border-right: none;
+}
+
+.sain-compare-white .sain-cmp-row {
+  background: #ffffff;
+  border-bottom: 1px solid #e3eaf3;
+}
+
+.sain-compare-white .sain-cmp-row:nth-child(odd) {
+  background: #f8fbff;
+}
+
+.sain-compare-white .sain-cmp-row:last-child {
+  border-bottom: none;
+}
+
+.sain-compare-white .sain-cmp-td {
+  min-height: 72px;
+  padding: 18px;
+  color: #344054;
+  font-size: 15.5px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-right: 1px solid #e3eaf3;
+}
+
+.sain-compare-white .sain-cmp-td:first-child {
+  justify-content: flex-start;
+  text-align: left;
+  color: #102033;
+  font-weight: 900;
+}
+
+.sain-compare-white .sain-cmp-td:last-child {
+  border-right: none;
+}
+
+.sain-compare-white .sain-cmp-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sain-compare-white .sain-cmp-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.sain-compare-white .sain-cmp-icon.yes {
+  background: #ecfdf3;
+  color: #07843f;
+  border: 1px solid #b8ebcc;
+}
+
+.sain-compare-white .sain-cmp-icon.no {
+  background: #fff1f1;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
+
+.sain-compare-white .sain-cmp-provs {
+  position: relative;
+  z-index: 2;
+  margin-top: 28px;
+}
+
+.sain-compare-white .sain-cmp-prov-col {
+  height: 100%;
+  padding: 26px;
+  border-radius: 24px;
+  background: #f8fbff;
+  border: 1px solid #e3eaf3;
+}
+
+.sain-compare-white .sain-cmp-prov-h {
+  font-size: 20px;
+  font-weight: 900;
+  color: #102033;
+  margin-bottom: 16px;
+}
+
+.sain-compare-white .sain-cmp-prov-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.sain-compare-white .sain-cmp-prov {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 15px;
+  border-radius: 50px;
+  background: #ffffff;
+  color: #0b63ce;
+  font-size: 14px;
+  font-weight: 800;
+  border: 1px solid #cfe3ff;
+}
+
+.sain-compare-white .sain-a {
+  animation-name: sainCompareFadeUp;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+}
+
+.sain-compare-white .sain-v {
+  opacity: 0;
+}
+
+@keyframes sainCompareFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sain-switch-dark {
+  width: 100%;
+  padding: 90px 0;
+  background: linear-gradient(135deg, #050b14 0%, #08111f 45%, #111827 100%);
+  overflow: hidden;
+}
+
+
+
+.sain-switch-dark .sain-sh {
+  margin-bottom: 55px;
+}
+
+.sain-switch-dark .sain-badge {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 50px;
+  background: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  font-size: 15px;
+  font-weight: 800;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  margin-bottom: 18px;
+}
+
+.sain-switch-dark .sain-badge svg {
+  width: 20px;
+  height: 20px;
+}
+
+.sain-switch-dark .sain-sec-h {
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 900;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.sain-switch-dark .sain-sec-h span {
+  color: #38bdf8;
+}
+
+.sain-switch-dark .sain-tl {
+  position: relative;
+}
+
+.sain-switch-dark .sain-tl-item {
+  position: relative;
+  height: 100%;
+}
+
+.sain-switch-dark .sain-tl-dot {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto -20px auto;
+  position: relative;
+  z-index: 5;
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.45);
+}
+
+.sain-switch-dark .sain-tl-card {
+  position: relative;
+  height: 100%;
+  min-height: 285px;
+  padding: 46px 30px 34px 30px;
+  text-align: center;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(15px);
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+.sain-switch-dark .sain-tl-card::before {
+  content: "";
+  position: absolute;
+  top: -85px;
+  right: -85px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: rgba(56, 189, 248, 0.18);
+  filter: blur(12px);
+}
+
+.sain-switch-dark .sain-tl-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(56, 189, 248, 0.65);
+  box-shadow: 0 28px 65px rgba(56, 189, 248, 0.18);
+}
+
+.sain-switch-dark .sain-tl-ic {
+  width: 70px;
+  height: 70px;
+  border-radius: 22px;
+  margin: 0 auto 24px auto;
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 14px 28px rgba(37, 99, 235, 0.35);
+  position: relative;
+  z-index: 2;
+}
+
+.sain-switch-dark .sain-tl-ic svg {
+  width: 34px;
+  height: 34px;
+}
+
+.sain-switch-dark .sain-tl-t {
+  font-size: 23px;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 14px;
+  position: relative;
+  z-index: 2;
+}
+
+.sain-switch-dark .sain-tl-d {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #cbd5e1;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.sain-switch-dark .sain-sw-cta-wrap {
+  margin-top: 45px;
+}
+
+.sain-switch-dark .sain-btn {
+  min-height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 900;
+  padding: 14px 28px;
+  box-shadow: 0 18px 35px rgba(37, 99, 235, 0.40);
+  transition: all 0.3s ease;
+}
+
+.sain-switch-dark .sain-btn:hover {
+  color: #ffffff;
+  transform: translateY(-4px);
+  box-shadow: 0 24px 48px rgba(37, 99, 235, 0.55);
+}
+
+.sain-switch-dark .sain-btn svg {
+  width: 21px;
+  height: 21px;
+}
+
+.sain-switch-dark .sain-a {
+  animation-name: sainSwitchFadeUp;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+}
+
+.sain-switch-dark .sain-v {
+  opacity: 0;
+}
+
+@keyframes sainSwitchFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 991px) {
+  .sain-plans-white {
+    padding: 70px 0;
+  }
+
+  .sain-plans-white .sain-pc {
+    padding: 28px;
+  }
+
+  .sain-plans-white .sain-pc-right {
+    justify-content: flex-start;
+  }
+
+  .sain-plans-white .sain-btn {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .sain-plans-white {
+    padding: 60px 0;
+  }
+
+  .sain-plans-white .sain-badge {
+    font-size: 13px;
+    padding: 9px 14px;
+  }
+
+  .sain-plans-white .sain-pc {
+    padding: 26px 22px;
+    border-radius: 22px;
+  }
+
+  .sain-plans-white .sain-pc-price {
+    font-size: 44px;
+  }
+
+  .sain-plans-white .sain-pc-name {
+    font-size: 22px;
+  }
+
+  .sain-plans-white .sain-pc-mid {
+    gap: 10px;
+  }
+
+  .sain-plans-white .sain-pc-feat {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .sain-plans-white .sain-pop-tag {
+    position: static;
+    display: inline-block;
+    width: fit-content;
+    margin-bottom: 14px;
+  }
+}

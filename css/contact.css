@@ -1,0 +1,369 @@
+.saco-contact-white {
+  width: 100%;
+  padding: 34px 28px;
+  border-radius: 28px;
+  background: #ffffff;
+  border: 1px solid #e3eaf3;
+  box-shadow: 0 18px 45px rgba(15, 35, 70, 0.10);
+  overflow: hidden;
+  position: relative;
+}
+
+.saco-contact-white::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background: rgba(11, 99, 206, 0.10);
+  filter: blur(10px);
+}
+
+.saco-contact-white .saco-hc-h {
+  font-size: 28px;
+  font-weight: 900;
+  color: #102033;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.saco-contact-white .saco-hc-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px 0;
+  border-bottom: 1px solid #e9eef5;
+  position: relative;
+  z-index: 2;
+}
+
+.saco-contact-white .saco-hc-item:last-of-type {
+  margin-bottom: 22px;
+}
+
+.saco-contact-white .saco-hc-ic {
+  min-width: 52px;
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: #eef6ff;
+  color: #0b63ce;
+  border: 1px solid #cfe3ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.saco-contact-white .saco-hc-ic svg {
+  width: 24px;
+  height: 24px;
+}
+
+.saco-contact-white .saco-hc-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #667085;
+  margin-bottom: 4px;
+}
+
+.saco-contact-white .saco-hc-val {
+  font-size: 17px;
+  font-weight: 900;
+  color: #102033;
+  word-break: break-word;
+}
+
+.saco-contact-white .saco-btn {
+  width: 100%;
+  min-height: 54px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #0b63ce, #14a3ff);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 900;
+  box-shadow: 0 14px 30px rgba(11, 99, 206, 0.28);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.saco-contact-white .saco-btn:hover {
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 18px 38px rgba(11, 99, 206, 0.36);
+}
+
+.saco-contact-white .saco-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.saco-a {
+  animation-name: sacoFadeUp;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+}
+
+.saco-v {
+  opacity: 0;
+}
+
+@keyframes sacoFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.saco-hours-dark {
+  width: 100%;
+  padding: 90px 0;
+  background: linear-gradient(135deg, #050b14 0%, #08111f 45%, #111827 100%);
+  overflow: hidden;
+}
+
+
+
+.saco-hours-dark .saco-sh {
+  margin-bottom: 55px;
+}
+
+.saco-hours-dark .saco-badge {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 50px;
+  background: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  font-size: 15px;
+  font-weight: 800;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  margin-bottom: 18px;
+}
+
+.saco-hours-dark .saco-badge svg {
+  width: 20px;
+  height: 20px;
+}
+
+.saco-hours-dark .saco-sec-h {
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 900;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.saco-hours-dark .saco-sec-h span {
+  color: #38bdf8;
+}
+
+.saco-hours-dark .saco-hr-grid {
+  align-items: stretch;
+}
+
+.saco-hours-dark .saco-hr-card,
+.saco-hours-dark .saco-hr-info {
+  position: relative;
+  height: 100%;
+  padding: 36px 30px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(15px);
+  overflow: hidden;
+  transition: all 0.35s ease;
+}
+
+.saco-hours-dark .saco-hr-card::before,
+.saco-hours-dark .saco-hr-info::before {
+  content: "";
+  position: absolute;
+  top: -90px;
+  right: -90px;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background: rgba(56, 189, 248, 0.16);
+  filter: blur(14px);
+}
+
+.saco-hours-dark .saco-hr-card:hover,
+.saco-hours-dark .saco-hr-info:hover {
+  transform: translateY(-8px);
+  border-color: rgba(56, 189, 248, 0.65);
+  box-shadow: 0 28px 65px rgba(56, 189, 248, 0.18);
+}
+
+.saco-hours-dark .saco-hr-ic {
+  width: 68px;
+  height: 68px;
+  border-radius: 22px;
+  margin-bottom: 22px;
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 14px 28px rgba(37, 99, 235, 0.35);
+  position: relative;
+  z-index: 2;
+}
+
+.saco-hours-dark .saco-hr-ic svg {
+  width: 32px;
+  height: 32px;
+}
+
+.saco-hours-dark .saco-hr-h {
+  font-size: 24px;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 22px;
+  position: relative;
+  z-index: 2;
+}
+
+.saco-hours-dark .saco-hr-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+  position: relative;
+  z-index: 2;
+}
+
+.saco-hours-dark .saco-hr-row:last-child {
+  border-bottom: none;
+}
+
+.saco-hours-dark .saco-hr-day {
+  font-size: 15px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.saco-hours-dark .saco-hr-time {
+  font-size: 15px;
+  font-weight: 700;
+  color: #cbd5e1;
+}
+
+.saco-hours-dark .saco-hr-closed {
+  color: #fca5a5;
+}
+
+.saco-hours-dark .saco-hr-info-h {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.saco-hours-dark .saco-hr-info-h svg {
+  width: 26px;
+  height: 26px;
+  color: #38bdf8;
+}
+
+.saco-hours-dark .saco-hr-info-p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #cbd5e1;
+  margin-bottom: 22px;
+  position: relative;
+  z-index: 2;
+}
+
+.saco-hours-dark .saco-hr-note {
+  padding: 18px 18px;
+  border-radius: 20px;
+  background: rgba(56, 189, 248, 0.10);
+  border: 1px solid rgba(56, 189, 248, 0.22);
+  color: #dbeafe;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.saco-hours-dark .saco-hr-note strong {
+  color: #ffffff;
+}
+
+.saco-hours-dark .saco-btn {
+  width: 100%;
+  min-height: 54px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 900;
+  box-shadow: 0 18px 35px rgba(37, 99, 235, 0.40);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.saco-hours-dark .saco-btn:hover {
+  color: #ffffff;
+  transform: translateY(-4px);
+  box-shadow: 0 24px 48px rgba(37, 99, 235, 0.55);
+}
+
+.saco-hours-dark .saco-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.saco-hours-dark .saco-a {
+  animation-name: sacoHoursFadeUp;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+}
+
+.saco-hours-dark .saco-v {
+  opacity: 0;
+}
+
+@keyframes sacoHoursFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

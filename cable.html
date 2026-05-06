@@ -12,6 +12,21 @@
   gtag('js', new Date());
 
   gtag('config', 'AW-18141696121');
+</script><!-- Event snippet for Click on call button conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18141696121/rLj6CM21tagcEPmg0cpD',
+      'event_callback': callback
+  });
+  return false;
+}
 </script>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQG388PW"

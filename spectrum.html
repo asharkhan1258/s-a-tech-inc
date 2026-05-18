@@ -195,176 +195,6 @@ function gtag_report_conversion(url) {
 </nav>
 
 
-<section class="internet-form-section">
-  <div class="container">
-
-    <div class="row justify-content-start">
-      <div class="col-12 col-md-7 col-lg-5">
-
-        <div class="form-card">
-
-          <h2>Find Internet deals in your area</h2>
-
-          <ul class="form-customer-type">
-            <li>
-              <a class="residential" href="#" onclick="return false;">Residential</a>
-            </li>
-
-            <li>
-              <a class="business" data-bs-toggle="modal" data-bs-target=".business-form-modal">Business</a>
-            </li>
-          </ul>
-
-          <form
-            name="updater_qualform"
-            method="GET"
-            action="https://spectrumspecial.com/home/"
-            class="updater-qualform-form has-smarty-autocomplete has-google-autosuggestion"
-            data-updater-qualform-smarty-autocomplete="true"
-            data-updater-qualform-form
-          >
-
-            <div class="form-validation-error"></div>
-
-            <div class="loader">
-              <svg class="loader-spinner" width="55px" height="55px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                <circle class="loader-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
-              </svg>
-            </div>
-
-            <div class="inner">
-
-              <div class="row g-3">
-
-                <div class="col-12">
-                  <div class="field field-address in-field field-type-search has-smarty-autocomplete">
-                    <label for="address-fR2h">Street address, city, state</label>
-
-                    <input
-                      type="search"
-                      class="address in-field form-control"
-                      placeholder="Street Address"
-                    >
-
-                    <div class="smarty-autocomplete-container"></div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-md-6">
-                  <div class="field field-unit in-field field-type-text">
-                    <label for="unit-fR2h">Apt/Unit</label>
-
-                    <input
-                      type="text"
-                      class="unit in-field form-control"
-                      placeholder="Apt/Unit"
-                      name="unit"
-                      id="unit-fR2h"
-                      data-updater-qualform-form-field="unit"
-                    >
-                  </div>
-                </div>
-
-                <div class="col-12 col-md-6">
-                  <div class="field field-zip in-field field-type-text">
-                    <label for="zip-fR2h">
-                      Zip Code<span class="required">*</span>
-                    </label>
-
-                    <input
-                      type="text"
-                      class="zip in-field form-control"
-                      placeholder="Zip Code"
-                      name="zip"
-                      id="zip-fR2h"
-                      data-required="zip"
-                      data-updater-qualform-form-field="zip"
-                    >
-
-                    <p class="field-error" style="display:none;">
-                      Please provide a valid zip code (e.g. 23225).
-                    </p>
-                  </div>
-                </div>
-
-                <div class="col-12">
-                  <div class="field field-is-moving field-type-boolean">
-                    <label for="isMoving-fR2h" class="moving-label">
-                      <input
-                        type="checkbox"
-                        name="isMoving"
-                        id="isMoving-fR2h"
-                        value="1"
-                        data-updater-qualform-form-field="isMoving"
-                      >
-                      I’m moving to this address
-                    </label>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="field field-city in-field field-type-hidden">
-                <input
-                  type="hidden"
-                  name="city"
-                  id="city-fR2h"
-                  value=""
-                  data-updater-qualform-form-field="city"
-                >
-              </div>
-
-              <div class="field field-state in-field field-type-hidden">
-                <input
-                  type="hidden"
-                  name="state"
-                  id="state-fR2h"
-                  value=""
-                  data-updater-qualform-form-field="state"
-                >
-              </div>
-
-            </div>
-
-            <div class="footer">
-              <button type="submit" class="highlight-color-background">
-                Shop Internet
-              </button>
-            </div>
-
-            <input
-              type="hidden"
-              class="address in-field"
-              placeholder="Street Address"
-              name="address"
-              id="address-fR2h"
-              data-updater-qualform-form-field="address"
-            >
-
-          </form>
-
-          <div class="form-content-after">
-            <p>
-              <a href="tel:+18885504082" class="google-phone-number">
-                <span class="updater-qualform-phone-number icon-before">
-                  <span class="phone-number-text">+18885504082</span>
-                </span>
-              </a>
-            </p>
-
-            <p class="is-style-small-text">
-              Want to talk to a human? We’re here 24/7 to help.
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-</section>
-
 <section class="spectrum-offers">
   <div class="container">
 
@@ -396,7 +226,7 @@ function gtag_report_conversion(url) {
               <div class="spectrum-card__disclaimer">
                 <p>
                   For 12 months. Wireless speeds may vary.
-                  <a href="#" data-bs-toggle="modal" data-bs-target="#modal-terms-200mbps">
+                  <a href="tel:+18885504082" data-bs-toggle="modal" data-bs-target="#modal-terms-200mbps">
                     See details
                   </a>
                 </p>
@@ -420,7 +250,7 @@ function gtag_report_conversion(url) {
             <div class="spectrum-card__button">
               <a
                 class="is-style-btn"
-                href=""
+                href="tel:+18885504082"
                 data-updater-etph-click-event="marketing_sites.landing_plan.clicked"
                 data-updater-etph-event-payload="category: 'plans', selected: '200Mbps'"
               >
@@ -451,7 +281,7 @@ function gtag_report_conversion(url) {
               <div class="spectrum-card__disclaimer">
                 <p>
                   For 12 months. Wireless speeds may vary.
-                  <a href="#" data-bs-toggle="modal" data-bs-target="#modal-terms-400mbps">
+                  <a href="tel:+18885504082" data-bs-toggle="modal" data-bs-target="#modal-terms-400mbps">
                     See details
                   </a>
                 </p>
@@ -476,7 +306,7 @@ function gtag_report_conversion(url) {
             <div class="spectrum-card__button">
               <a
                 class="is-style-btn"
-                href=""
+                href="tel:+18885504082"
                 data-updater-etph-click-event="marketing_sites.landing_plan.clicked"
                 data-updater-etph-event-payload="category: 'plans', selected: '400Mbps'"
               >
@@ -507,7 +337,7 @@ function gtag_report_conversion(url) {
               <div class="spectrum-card__disclaimer">
                 <p>
                   For 12 months. Wireless speeds may vary.
-                  <a href="#" data-bs-toggle="modal" data-bs-target="#modal-terms-1000mbps">
+                  <a href="tel:+18885504082" data-bs-toggle="modal" data-bs-target="#modal-terms-1000mbps">
                     See details
                   </a>
                 </p>
@@ -533,7 +363,7 @@ function gtag_report_conversion(url) {
             <div class="spectrum-card__button">
               <a
                 class="is-style-btn"
-                href=""
+                href="tel:+18885504082"
                 data-updater-etph-click-event="marketing_sites.landing_plan.clicked"
                 data-updater-etph-event-payload="category: 'plans', selected: '1000Mbps'"
               >

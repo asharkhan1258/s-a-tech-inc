@@ -1,0 +1,315 @@
+.fortiner-hero-section {
+    background: #0f1720;
+    overflow: hidden;
+}
+
+.fortiner-image-wrapper {
+    position: relative;
+    height: 100%;
+}
+
+.fortiner-main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 650px;
+}
+
+.fortiner-overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.fortiner-overlay-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fortiner-content {
+    padding: 80px 60px;
+    color: #fff;
+    max-width: 650px;
+}
+
+.fortiner-title {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.fortiner-title sup {
+    font-size: 20px;
+    top: -25px;
+}
+
+.fortiner-subtitle {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 35px;
+}
+
+.fortiner-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px;
+}
+
+.fortiner-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 18px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.fortiner-check {
+    color: #00d26a;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+.fortiner-learn-more {
+    font-size: 18px;
+    margin-bottom: 8px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.fortiner-check-text {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.fortiner-input-group {
+    max-width: 500px;
+    overflow: hidden;
+    border-radius: 50px;
+    background: #fff;
+}
+
+.fortiner-input {
+    border: none;
+    height: 58px;
+    padding-left: 25px;
+    font-size: 16px;
+    box-shadow: none !important;
+}
+
+.fortiner-submit-btn {
+    background: #00d26a;
+    color: #fff;
+    border: none;
+    padding: 0 35px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.fortiner-submit-btn:hover {
+    background: #00b85d;
+    color: #fff;
+}
+
+
+.fortiner-plans-section{
+    background:#f5f7fb;
+    font-family:Arial, sans-serif;
+}
+
+.fortiner-heading{
+    font-size:42px;
+    font-weight:700;
+    color:#111827;
+    margin-bottom:15px;
+}
+
+.fortiner-subheading{
+    font-size:18px;
+    color:#6b7280;
+    max-width:700px;
+    margin:auto;
+}
+
+.fortiner-card{
+    background:#fff;
+    border-radius:22px;
+    padding:35px 28px;
+    height:100%;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    transition:0.3s;
+    position:relative;
+    overflow:hidden;
+    border:2px solid transparent;
+}
+
+.fortiner-card:hover{
+    transform:translateY(-8px);
+    border-color:#5b3df5;
+}
+
+.fortiner-popular{
+    border:2px solid #5b3df5;
+}
+
+.fortiner-badge{
+    position:absolute;
+    top:18px;
+    right:18px;
+    background:#5b3df5;
+    color:#fff;
+    padding:7px 14px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.fortiner-plan{
+    font-size:28px;
+    font-weight:700;
+    color:#111827;
+    margin-bottom:20px;
+}
+
+.fortiner-price-box{
+    display:flex;
+    align-items:flex-start;
+    margin-bottom:10px;
+}
+
+.fortiner-dollar{
+    font-size:24px;
+    font-weight:700;
+    margin-top:10px;
+    color:#5b3df5;
+}
+
+.fortiner-price{
+    font-size:68px;
+    line-height:1;
+    font-weight:800;
+    color:#111827;
+}
+
+.fortiner-cents{
+    font-size:20px;
+    margin-top:14px;
+    color:#6b7280;
+    font-weight:600;
+}
+
+.fortiner-old-price{
+    margin-bottom:25px;
+    color:#9ca3af;
+    font-size:18px;
+}
+
+.fortiner-features{
+    list-style:none;
+    padding:0;
+    margin:0 0 30px;
+}
+
+.fortiner-features li{
+    padding:12px 0;
+    border-bottom:1px solid #ececec;
+    color:#374151;
+    font-size:16px;
+    position:relative;
+    padding-left:28px;
+}
+
+.fortiner-features li::before{
+    content:"✓";
+    position:absolute;
+    left:0;
+    top:11px;
+    color:#5b3df5;
+    font-weight:700;
+}
+
+.fortiner-btn{
+    display:inline-block;
+    width:100%;
+    text-align:center;
+    background:#5b3df5;
+    color:#fff;
+    text-decoration:none;
+    padding:15px;
+    border-radius:14px;
+    font-size:16px;
+    font-weight:700;
+    transition:0.3s;
+}
+
+.fortiner-btn:hover{
+    background:#4527e6;
+    color:#fff;
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+
+    .fortiner-content {
+        padding: 50px 25px;
+    }
+
+    .fortiner-title {
+        font-size: 42px;
+    }
+
+    .fortiner-subtitle {
+        font-size: 22px;
+    }
+
+    .fortiner-main-image {
+        min-height: 450px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .fortiner-title {
+        font-size: 34px;
+    }
+
+    .fortiner-subtitle {
+        font-size: 18px;
+    }
+
+    .fortiner-list li {
+        font-size: 16px;
+    }
+
+    .fortiner-input-group {
+        flex-direction: column;
+        border-radius: 20px;
+        background: transparent;
+        gap: 15px;
+    }
+
+    .fortiner-input {
+        border-radius: 50px !important;
+    }
+
+    .fortiner-submit-btn {
+        border-radius: 50px;
+        width: 100%;
+        height: 55px;
+    }
+      .fortiner-heading{
+        font-size:32px;
+    }
+
+    .fortiner-price{
+        font-size:52px;
+    }
+
+}

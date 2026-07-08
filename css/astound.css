@@ -1,0 +1,182 @@
+body{
+    background:#f3f3f3;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.pricing-section{
+    padding:80px 0;
+}
+
+.promo-toggle{
+    display:inline-flex;
+    border:2px solid #4836a8;
+    border-radius:10px;
+    overflow:hidden;
+    margin-top:10px;
+}
+
+.promo-toggle button{
+    border:none;
+    padding:12px 30px;
+    background:#9ad128;
+    color:#fff;
+    font-weight:700;
+}
+
+.promo-toggle .active-btn{
+    background:#fff;
+    color:#4836a8;
+}
+
+.plan-card{
+    background:#fff;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    position:relative;
+}
+
+.speed-header{
+    background:#1d1648;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+.speed-header span{
+    font-size:18px;
+    font-weight:600;
+}
+
+.speed-header h2{
+    font-size:60px;
+    font-weight:800;
+    margin:0;
+}
+
+.speed-header h2 span{
+    font-size:26px;
+}
+
+.plan-label{
+    width:80%;
+    margin:-13px auto 20px;
+    text-align:center;
+    color:#fff;
+    padding:8px;
+    font-weight:700;
+    background:linear-gradient(90deg,#3e58b3,#b5d632);
+}
+
+.plan-body{
+    padding:25px;
+    min-height:240px;
+}
+
+.plan-body h6{
+    font-weight:800;
+    margin-bottom:15px;
+}
+
+.plan-body ul{
+    list-style:none;
+    padding:0;
+}
+
+.plan-body li{
+    margin-bottom:12px;
+    font-size:17px;
+}
+
+.plan-body i{
+    color:#00bcd4;
+    margin-right:8px;
+}
+
+.gift-card{
+    width:120px;
+    margin:20px auto;
+    background:linear-gradient(135deg,#5135b8,#26b3a5);
+    color:#fff;
+    text-align:center;
+    padding:15px;
+    border-radius:10px;
+    transform:rotate(-10deg);
+}
+
+.gift-card i{
+    color:#c8ff5c;
+    font-size:28px;
+    display:block;
+}
+
+.gift-card span{
+    font-size:30px;
+    font-weight:800;
+}
+
+.price-box{
+    background:linear-gradient(90deg,#4253a5,#1493a6);
+    text-align:center;
+    padding:25px;
+}
+
+.price-box.green{
+    background:linear-gradient(90deg,#1ca39f,#8fd32b);
+}
+
+.price-box h3{
+    color:#fff;
+    font-size:60px;
+    font-weight:800;
+}
+
+.price-box h3 span{
+    font-size:28px;
+}
+
+.order-btn{
+    background:#fff;
+    border:none;
+    padding:14px 50px;
+    font-weight:700;
+    color:#3e2ca8;
+    margin-top:10px;
+}
+
+.offer-box{
+    background:#1d1648;
+    color:#fff;
+    padding:20px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.offer-box i{
+    font-size:28px;
+}
+
+.offer-box p{
+    margin:0;
+}
+
+.details{
+    text-align:center;
+    padding:25px;
+}
+
+.details a{
+    color:#000;
+    font-weight:700;
+    text-decoration:underline;
+}
+
+@media(max-width:991px){
+
+    .speed-header h2{
+        font-size:45px;
+    }
+
+    .price-box h3{
+        font-size:45px;
+    }
+}
